@@ -4,6 +4,7 @@ const toggleLines = document.querySelectorAll(".main-toggle-line");
 const slideInElements = document.querySelectorAll(".slide-in");
 const backToTop = document.querySelector(".back-to-top");
 const mainHeader = document.querySelector(".main-header");
+const navLinks = document.querySelectorAll(".link-decoration");
 
 
 const backToTopFunction = () => {
@@ -14,6 +15,7 @@ const backToTopFunction = () => {
     } else {
         backToTop.classList.remove("active");
         mainHeader.classList.remove("active");
+
     }
 };
 
@@ -34,6 +36,13 @@ slideInElements.forEach(slideIn => {
 });
 
 
+navLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+        document.title = `Quinto Technologies | ${link.innerText.toLowerCase()}`;
+    });
+});
+
 
 window.onscroll = () => {
     backToTopFunction();
@@ -42,4 +51,5 @@ window.onscroll = () => {
 backToTop.addEventListener("click", () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+    document.title = "Quinto Technologies";
 });
