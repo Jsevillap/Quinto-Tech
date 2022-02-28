@@ -3,14 +3,17 @@ const navbar = document.querySelector(".main-navigation");
 const toggleLines = document.querySelectorAll(".main-toggle-line");
 const slideInElements = document.querySelectorAll(".slide-in");
 const backToTop = document.querySelector(".back-to-top");
+const mainHeader = document.querySelector(".main-header");
 
 
 const backToTopFunction = () => {
 
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         backToTop.classList.add("active");
+        mainHeader.classList.add("active");
     } else {
         backToTop.classList.remove("active");
+        mainHeader.classList.remove("active");
     }
 };
 

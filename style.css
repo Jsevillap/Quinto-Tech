@@ -459,9 +459,13 @@ section {
     padding: 1rem 0;
     position:fixed;
     width:100%;
-    box-shadow:0 0 10px hsl(0, 0%, 0%, 0.2);
-    background:var(--light-text);
     z-index:9999;
+    background:var(--light-text);
+    transition:350ms ease;
+}
+
+.main-header.active {
+    box-shadow:0 0 10px hsl(0, 0%, 0%, 0.2);
 }
 
 .main-header  img {
@@ -691,8 +695,8 @@ section {
 
 .tech-logo-container img {
     aspect-ratio: 1;
-    width:100%;
-    max-width:100px;
+    width:20vmin;
+    max-width:90px;
     filter:grayscale(100%);
     transition:350ms ease;
 }
@@ -701,16 +705,21 @@ section {
     filter:grayscale(0);
 }
 
+@media screen and (max-width:1440px) {
+    .tech-logo-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
 
+    .technologies {
+        gap:4rem;
+    }
+}
 
 @media screen and (max-width:1024px) {
     .tech-logo-container {
         grid-template-columns: repeat(5, 1fr);
     }
 
-    .technologies {
-        gap:4rem;
-    }
 }
 
 @media screen and (max-width:768px) {
