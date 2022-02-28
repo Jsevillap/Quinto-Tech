@@ -650,7 +650,7 @@ section {
 }
 
 .services .subheading {
-    max-width:300px;
+    max-width:280px;
 }
 
 .services .subtitle {
@@ -968,6 +968,7 @@ section {
 }
 
 
+
 /********* FOOTER *************/
 
 footer  {
@@ -1006,3 +1007,5 @@ footer a:hover {
         flex-direction: column;
     }
 }
+
+
