@@ -1,0 +1,649 @@
+/* @docs
+label: Core Remedies
+version: 0.1.0-beta.2
+
+note: |
+  These remedies are recommended
+  as a starter for any project.
+
+category: file
+*/
+
+
+/* @docs
+label: Box Sizing
+
+note: |
+  Use border-box by default, globally.
+
+category: global
+*/
+*, *::before, *::after { box-sizing: border-box; }
+
+
+/* @docs
+label: Line Sizing
+
+note: |
+  Consistent line-spacing,
+  even when inline elements have different line-heights.
+
+links:
+  - https://drafts.csswg.org/css-inline-3/#line-sizing-property
+
+category: global
+*/
+html { line-sizing: normal; }
+
+
+/* @docs
+label: Body Margins
+
+note: |
+  Remove the tiny space around the edge of the page.
+
+category: global
+*/
+body { margin: 0; }
+
+
+/* @docs
+label: Hidden Attribute
+
+note: |
+  Maintain `hidden` behaviour when overriding `display` values.
+
+  category: global
+*/
+[hidden] { display: none; }
+
+
+/* @docs
+label: Heading Sizes
+
+note: |
+  Switch to rem units for headings
+
+category: typography
+*/
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.17rem; }
+h4 { font-size: 1.00rem; }
+h5 { font-size: 0.83rem; }
+h6 { font-size: 0.67rem; }
+
+
+/* @docs
+label: H1 Margins
+
+note: |
+  Keep h1 margins consistent, even when nested.
+
+category: typography
+*/
+h1 { margin: 0.67em 0; }
+
+
+/* @docs
+label: Pre Wrapping
+
+note: |
+  Overflow by default is bad...
+
+category: typography
+*/
+pre { white-space: pre-wrap; }
+
+
+/* @docs
+label: Horizontal Rule
+
+note: |
+  1. Solid, thin horizontal rules
+  2. Remove Firefox `color: gray`
+  3. Remove default `1px` height, and common `overflow: hidden`
+
+category: typography
+*/
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  color: inherit;
+  height: 0;
+  overflow: visible;
+}
+
+
+/* @docs
+label: Responsive Embeds
+
+note: |
+  1. Block display is usually what we want
+  2. The `vertical-align` removes strange space-below in case authors overwrite the display value
+  3. Responsive by default
+  4. Audio without `[controls]` remains hidden by default
+
+category: embedded elements
+*/
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+audio:not([controls]) { display:none; }
+
+
+/* @docs
+label: Responsive Images
+
+note: |
+  These new elements display inline by default,
+  but that's not the expected behavior for either one.
+  This can interfere with proper layout and aspect-ratio handling.
+
+  1. Remove the unnecessary wrapping `picture`, while maintaining contents
+  2. Source elements have nothing to display, so we hide them entirely
+
+category: embedded elements
+*/
+picture { display: contents; }
+source { display: none; }
+
+
+/* @docs
+label: Aspect Ratios
+
+note: |
+  Maintain intrinsic aspect ratios when `max-width` is applied.
+  `iframe`, `embed`, and `object` are also embedded,
+  but have no intrinsic ratio,
+  so their `height` needs to be set explicitly.
+
+category: embedded elements
+*/
+img, svg, video, canvas {
+  height: auto;
+}
+
+
+/* @docs
+label: Audio Width
+
+note: |
+  There is no good reason elements default to 300px,
+  and audio files are unlikely to come with a width attribute.
+
+category: embedded elements
+*/
+audio { width: 100%; }
+
+/* @docs
+label: Image Borders
+
+note: |
+  Remove the border on images inside links in IE 10 and earlier.
+
+category: legacy browsers
+*/
+img { border-style: none; }
+
+
+/* @docs
+label: SVG Overflow
+
+note: |
+  Hide the overflow in IE 10 and earlier.
+
+category: legacy browsers
+*/
+svg { overflow: hidden; }
+
+
+/* @docs
+label: HTML5 Elements
+
+note: |
+  Default block display on HTML5 elements.
+  For oldIE to apply this styling one needs to add some JS as well (i.e. `document.createElement("main")`)
+
+links:
+  - https://www.sitepoint.com/html5-older-browsers-and-the-shiv/
+
+category: legacy browsers
+*/
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+
+/* @docs
+label: Checkbox & Radio Inputs
+
+note: |
+  1. Add the correct box sizing in IE 10
+  2. Remove the padding in IE 10
+
+category: legacy browsers
+*/
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+
+
+
+/* Quinto Tech Webstie CSS */
+
+
+
+
+:root {
+
+    --main-accent:#2C77D1;
+    --main-accent-900:#0C2C77;
+    --main-color:#000;
+    --main-color-200: hsl(0, 0%, 96%);
+    --light-text:#ffffff;
+    --gradient:linear-gradient(45deg, var(--main-accent), var(--main-accent-900));
+    --breakpoint: 1024px;
+
+}
+
+
+::selection {
+    background:var(--main-accent);
+    color:var(--light-text);
+}
+
+a {
+    text-decoration: none;
+    color:var(--main-color);
+}
+
+.slide-in {
+    transform:translateY(110%);
+    opacity:0;
+    animation:slideIn 1s var(--animation-delay, 0s) ease forwards;
+}
+
+
+@keyframes slideIn {
+    from {
+    transform:translateY(110%);
+    opacity:0;
+    }
+    to {
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+
+.big-title,
+.title,
+.subtitle,
+.subheading {
+    margin:0;
+}
+
+.big-title {
+    font-size:clamp(3.5rem, 10vw, 104px);
+    font-weight: bold;
+    text-align: center;
+    line-height:0.9;
+}
+
+.title {
+    font-size:clamp(2.5rem, 10vw, 62px);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size:2rem;
+}
+
+.subheading {
+    font-size:clamp(1.2rem, 2vw, 1.5rem);
+    text-align: center;
+    max-width:680px;
+}
+
+.gradient-text {
+    background:var(--gradient);
+    -webkit-background-clip: text;
+    background-clip:text;
+    color:transparent;
+    /*animation:bg 10s linear infinite;*/
+}
+
+@keyframes bg {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+html,
+body {
+    height:100%;
+    scroll-behavior: smooth;
+    scroll-padding:108px;
+}
+
+body {
+    
+    overflow-x:hidden;
+    color:var(--main-color, black);
+    font-family: 'Ubuntu', sans-serif;
+    
+
+}
+
+img {
+    display:block;
+    max-width:100%;
+}
+
+section {
+    min-height:calc(100vh - 98px);
+}
+
+.container {
+    width:100%;
+    max-width:1400px;
+    padding:0 2rem;
+    margin:0 auto;
+}
+
+.container-full-width {
+    width:100%;
+    padding:0 3rem;
+}
+
+
+.link-decoration {
+    position:relative;
+}
+
+.link-decoration::before {
+    position:absolute;
+    content:"";
+    width:100%;
+    height:3px;
+    background:var(--gradient);
+    bottom:-0.4rem;
+    transition:transform 250ms ease-in-out;
+    transform:scaleX(0);
+    transform-origin:bottom right;
+}
+
+.link-decoration:hover::before,
+.link-decoration:focus::before{
+    transform-origin:bottom left;
+    transform:scaleX(1);
+}
+
+
+
+.main-header {
+    top:0;
+    padding: 1rem 0;
+    position:fixed;
+    width:100%;
+    box-shadow:0 0 10px hsl(0, 0%, 0%, 0.2);
+    background:var(--light-text);
+    z-index:9999;
+}
+
+.main-header  img {
+    width:clamp(200px, 15%, 250px);
+}
+
+.main-header .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-navigation {
+    transition: 350ms ease;
+}
+
+.main-navigation > ul {
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    gap:1.5rem;
+    padding:0.5rem 1rem;
+}
+
+
+.main-navigation > ul li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.main-navigation a {
+    text-decoration:none;
+    color:inherit;
+}
+
+.main-nav-toggle {
+    width:30px;
+    padding:0.5rem 0;
+    gap:0.2rem;
+    display:none;
+}
+
+.main-nav-toggle:hover {
+    cursor:pointer;
+}
+
+.main-toggle-line {
+    width:100%;
+    height:3px;
+    border-radius:10px;
+    background:var(--main-color);
+    transition:250ms ease;
+    --transform-value:calc(0.2rem + 3px);
+}
+
+.main-toggle-line:nth-of-type(1).active {
+    transform:translateY(var(--transform-value)) rotate(45deg);
+}
+
+.main-toggle-line:nth-of-type(2).active {
+    opacity:0;
+}
+
+.main-toggle-line:nth-of-type(3).active {
+    transform:translateY(calc(-1 * var(--transform-value))) rotate(-45deg);
+}
+
+@media screen and (max-width:1024px) {
+    
+    .main-header .container {
+        flex-wrap: wrap;
+    }
+
+    .main-nav-toggle {
+        display:grid;
+    }
+
+    .main-navigation {
+        flex-basis:100%;
+        visibility: hidden;
+        max-height: 0;
+        opacity:0;
+    }
+
+    
+    .main-navigation.active {
+        visibility: visible;
+        opacity:1;
+        max-height:100vh;
+    }
+
+    .main-navigation > ul {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding:0;
+    }
+
+    .main-navigation > ul li {
+       width:100%;
+       text-align: center;
+       padding:1rem;
+    }
+}
+
+/***************** MAIN HERO **************/
+
+.main-hero {
+    
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:2.2rem;
+    flex-direction: column;
+    padding:1rem;
+    padding-top:98px;
+}
+
+
+
+.hero-button {
+    border:0;
+    background:var(--gradient);
+    color:white;
+    padding:1.5rem 2rem;
+    font-weight:bold;
+    font-size:clamp(1.3rem, 2vw, 1.8rem);
+    font-family: inherit;
+    display:block;
+    transition: transform 250ms ease-in, outline-offset 250ms ease-in, outline 250ms ease-in;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    transform:scale(1.03);
+    outline:2px solid var(--main-accent);
+    outline-offset: 3px;
+    cursor:pointer;
+}
+
+
+/********** SERVICES *********/
+
+.services {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap:8rem;
+    justify-content: center;
+    background:var(--main-color-200);
+    padding:3rem 2rem;
+}
+
+.services .subheading {
+    max-width:300px;
+}
+
+.services .subtitle {
+    color:var(--main-accent);
+}
+
+.services-list {
+    display:flex;
+    justify-content: center;
+    gap:10rem;
+}
+
+.services-list img {
+    max-width:200px;
+}
+
+.service {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    flex-direction: column;
+}
+
+@media screen and (max-width:1024px) {
+
+    .services {
+        gap:3rem;
+    }
+
+    .services-list {
+        flex-direction: column;
+        gap:3rem;
+    }
+
+}
+
+/******* PHRASE *********/
+
+.phrase {
+    background:var(--main-accent);
+    min-height:30vh;
+    display:grid;
+    place-items:center;
+}
+
+.phrase h2 {
+    font-size:clamp(2.5rem, 10vw, 62px);
+    text-align: center;
+    color:var(--light-text);
+    max-width:800px;
+}
+
+.phrase h2 span {
+    color:var(--main-color);
+}
+
+
+/********* FOOTER *************/
+
+footer {
+    display:flex;
+    padding: 3rem;
+    justify-content: space-around;
+    align-items: center;
+    background:var(--main-color);
+    color:var(--light-text);
+}
+
+footer img {
+    width:150px;
+}
+
+footer a {
+    color:var(--light-text);
+    transition:color 350ms ease;
+}
+
+footer a:hover {
+    color:var(--main-accent);
+}
+
+@media screen and (max-width:1024px) {
+    
+    footer{
+        flex-direction: column;
+    }
+}
