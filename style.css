@@ -291,14 +291,14 @@ h3 {
 }
 
 .big-title {
-    font-size:clamp(3.5rem, 10vw, 104px);
+    font-size:clamp(3.6rem, 10vw, 104px);
     font-weight: bold;
     text-align: center;
     line-height:0.9;
 }
 
 .title {
-    font-size:clamp(2.5rem, 10vw, 62px);
+    font-size:clamp(2rem, 10vw, 62px);
     text-align: center;
     text-transform: uppercase;
 }
@@ -311,6 +311,7 @@ h3 {
     --max-font-size:1.3rem;
     font-size:clamp(1.1rem, 2vw, var(--max-font-size));
     text-align: center;
+    line-height: 1.4;
     max-width:680px;
 }
 
@@ -914,6 +915,15 @@ section {
     animation-play-state: running;
     cursor:pointer;
     transform:scale(1.01);
+}
+
+
+@media screen and (max-width:1024px) {
+    .input-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
