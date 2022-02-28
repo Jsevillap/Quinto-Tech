@@ -385,6 +385,50 @@ section {
 }
 
 
+/******BACK TO TOP*******/
+.back-to-top {
+    position:fixed;
+    z-index:8888;
+    bottom:25px;
+    right:25px;
+    transform:rotate(-90deg) translateX(-200px);
+    width:60px;
+    height:60px;
+    background:var(--main-accent);
+    transition:350ms ease;    
+}
+
+.back-to-top.active {
+    transform:rotate(-90deg) translateX(0);
+}
+
+.back-to-top::before,
+.back-to-top::after {
+    content:"";
+    position:absolute;
+    background:var(--light-text);
+    width:20px;
+    height:2px;
+    top:50%;
+    left:45%;
+}
+
+.back-to-top::before {
+    transform:rotate(-45deg) translate(-50%, -50% );
+}
+
+.back-to-top::after {
+    transform:rotate(45deg) translate(-50%, -50%);
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    background:var(--main-color);
+    cursor:pointer;
+}
+
+/*******HEADER*****/
+
 .link-decoration {
     position:relative;
 }
@@ -647,6 +691,7 @@ section {
 .tech-logo-container img {
     aspect-ratio: 1;
     width:100%;
+    max-width:100px;
     filter:grayscale(100%);
     transition:350ms ease;
 }
@@ -874,13 +919,21 @@ section {
 
 /********* FOOTER *************/
 
-footer {
+footer  {
+    display:flex;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    background:var(--main-color);
+    color:var(--light-text);
+}
+
+footer .container {
     display:flex;
     padding: 3rem;
     justify-content: space-around;
     align-items: center;
-    background:var(--main-color);
-    color:var(--light-text);
+    padding:0;
 }
 
 footer img {
@@ -898,7 +951,7 @@ footer a:hover {
 
 @media screen and (max-width:1024px) {
     
-    footer{
+    footer .container{
         flex-direction: column;
     }
 }
