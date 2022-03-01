@@ -33,9 +33,7 @@
 
 <body>
 
-    <div class="back-to-top">
 
-    </div>
 
     <header class="main-header">
 
@@ -43,7 +41,8 @@
 
             <img src="logo-quinto.svg" alt="Logo Quinto Technologies">
 
-            <div class="main-nav-toggle">
+            <div class="main-nav-toggle" aria-controls="main-navigation" aria-label="Toggle navigation"
+                aria-expanded="false" tabindex="0">
                 <div class="main-toggle-line"></div>
                 <div class="main-toggle-line"></div>
                 <div class="main-toggle-line"></div>
@@ -65,19 +64,21 @@
 
     <main>
 
-        <section class="main-hero container">
+        <section class="main-hero container" tabindex="0" aria-label="Hero section IT staffing">
             <h1 class="big-title slide-in">Dedicated <br> <span class="gradient-text">IT staffing</span> </h1>
             <p class="subheading slide-in" style="--animation-delay:0.4s; --max-font-size:1.5rem">Build dedicated and
                 specialized development
                 teams and reduce time-to-market,
                 launch
                 new products faster and seize market opportunities.</p>
-            <a href="#contact"><button class="hero-button slide-in" style="--animation-delay:0.9s">Let's build a
-                    team</button></a>
+            <a href="#contact" class="hero-button slide-in" style="--animation-delay:0.9s">Let's
+                build a
+                team</a>
 
         </section>
 
-        <section class="container-full-width services container-padding" id="services">
+        <section class="container-full-width services container-padding" id="services" tabindex="0"
+            aria-label="Services">
             <h2 class="title">Services</h2>
 
             <div class="services-list">
@@ -105,13 +106,14 @@
             </div>
         </section>
 
-        <section class="container-full-width phrase">
+        <section class="container-full-width phrase" tabindex="0" aria-label="Quote">
 
             <h2>Hassle free <span>IT</span> talent hiring and recruitment process</h2>
 
         </section>
 
-        <section class="container technologies container-padding" id="technologies">
+        <section class="container technologies container-padding" id="technologies" tabindex="0"
+            aria-label="technologies">
 
             <h2 class="title blue-text">technologies</h2>
 
@@ -141,7 +143,8 @@
         </section>
 
 
-        <section class="container-full-width container-padding profiles" id="profiles">
+        <section class="container-full-width container-padding profiles" id="profiles" tabindex="0"
+            aria-label="profiles">
             <h2 class="title light-text">profiles</h2>
 
             <div class="absolute-icon">
@@ -166,7 +169,7 @@
 
         </section>
 
-        <section class="container-full-width container-padding about" id="about">
+        <section class="container-full-width container-padding about" id="about" tabindex="0" aria-label="About">
             <div class="about-content-container">
                 <h2 class="title blue-text">about</h2>
                 <p class="subheading"><span class="blue-text"><strong>Quinto Technologies</strong></span> is a
@@ -181,7 +184,7 @@
         </section>
 
 
-        <section class="container container-padding contact" id="contact">
+        <section class="container container-padding contact" id="contact" tabindex="0" aria-label="contact">
 
             <h2 class="title">LET’S FIND THE PERFECT TEAM FOR YOUR <span class="gradient-text">ORGANIZATION</span></h2>
 
@@ -189,11 +192,12 @@
                 <form name="contact" method="POST" data-netlify="true">
 
                     <div class="input-container">
-                        <input type="text" name="name" placeholder="Name" required>
-                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="text" name="name" placeholder="Name" aria-label="Your Name" required>
+                        <input type="email" name="email" placeholder="Email" aria-label="Your Email" required>
                     </div>
 
-                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message"
+                        aria-label="Your Message" required></textarea>
 
                     <button class="form-button" type="submit">Send Message</button>
 
@@ -205,6 +209,10 @@
         </section>
 
     </main>
+
+    <div class="back-to-top" aria-label="Back to top button" tabindex="0">
+
+    </div>
 
     <footer>
         <div class="container">

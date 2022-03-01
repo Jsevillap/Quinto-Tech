@@ -21,6 +21,13 @@ const backToTopFunction = () => {
 
 toggle.addEventListener("click", () => {
 
+    if (toggle.getAttribute("aria-expanded") === "false") {
+        toggle.setAttribute("aria-expanded", "true");
+    } else {
+        toggle.setAttribute("aria-expanded", "false");
+    }
+
+
     navbar.classList.toggle("active");
     toggleLines.forEach(line => {
         line.classList.toggle("active");

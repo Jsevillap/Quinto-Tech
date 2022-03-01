@@ -18,7 +18,10 @@ note: |
 
 category: global
 */
-*, *::before, *::after { box-sizing: border-box; }
+*, *::before, *::after { 
+    box-sizing: border-box;
+    outline-offset: 3px;
+ }
 
 
 /* @docs
@@ -400,6 +403,10 @@ section {
     min-height:calc(100vh - 98px);
 }
 
+section:focus {
+    outline:none;
+}
+
 .container {
     width:100%;
     max-width:1400px;
@@ -453,6 +460,8 @@ section {
 .back-to-top:focus {
     background:var(--main-color);
     cursor:pointer;
+    outline: 2px solid var(--light-text);
+    box-shadow:0 0 10px 5px var(--main-color-600);
 }
 
 /*******HEADER*****/
@@ -471,6 +480,10 @@ section {
     transition:transform 250ms ease-in-out;
     transform:scaleX(0);
     transform-origin:bottom right;
+}
+
+.link-decoration:focus {
+    outline:2px solid var(--main-accent);
 }
 
 .link-decoration:hover::before,
@@ -535,8 +548,10 @@ section {
     display:none;
 }
 
-.main-nav-toggle:hover {
+.main-nav-toggle:hover,
+.main-nav-toggle:focus {
     cursor:pointer;
+    outline:1px solid var(--main-accent);
 }
 
 .main-toggle-line {
@@ -635,6 +650,7 @@ section {
 .hero-button:focus {
     transform:scale(1.03);
     cursor:pointer;
+    outline:1px solid var(--main-accent);
 }
 
 
@@ -887,7 +903,7 @@ section {
     }
 
     .about-content-container {
-        padding: 2rem 2.5rem;
+        padding: 1rem 2.5rem;
         align-items: center;
     }
 
@@ -932,7 +948,7 @@ section {
 
 .form-container input:focus,
 .form-container textarea:focus {
-    box-shadow:0 0 10px var(--main-accent);
+    outline:2px solid var(--main-accent-900);
 }
 
 .form-button {
@@ -956,6 +972,7 @@ section {
     animation-play-state: running;
     cursor:pointer;
     transform:scale(1.01);
+    outline:2px solid var(--main-accent-900);
 }
 
 
@@ -997,8 +1014,10 @@ footer a {
     transition:color 350ms ease;
 }
 
-footer a:hover {
+footer a:hover,
+footer a:focus {
     color:var(--main-accent);
+    outline: 1px solid var(--main-accent);
 }
 
 @media screen and (max-width:1024px) {
