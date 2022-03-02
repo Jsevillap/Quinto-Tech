@@ -246,7 +246,7 @@ category: legacy browsers
 
 
 
-/*********** Quinto Tech Webstie CSS ***********/
+/********************************* Quinto Tech Webstie CSS ***********************************/
 
 
 
@@ -261,7 +261,7 @@ category: legacy browsers
     --main-color-200: hsl(0, 0%, 96%);
     --light-text:#ffffff;
     --gradient:linear-gradient(45deg, var(--main-accent-900), var(--main-accent));
-    --breakpoint: 1024px;
+    --transition: 350ms ease;
 
 }
 
@@ -307,17 +307,8 @@ body {
       
       overflow-x:hidden;
       color:var(--main-color, black);
-      font-family: 'Ubuntu', sans-serif;
-      
-  
+      font-family: 'Ubuntu', sans-serif;  
  }
-
-/*
- main {
-     margin:0 auto;
-     max-width: 2600px;
- }
-*/
 
 a {
     text-decoration: none;
@@ -383,7 +374,6 @@ section {
     -webkit-background-clip: text;
     background-clip:text;
     color:transparent;
-    /*animation:bg 10s linear infinite;*/
 }
 
 .blue-text {
@@ -410,11 +400,6 @@ section {
     }
 }
 
-
-
-
-
-
 .container {
     width:100%;
     max-width:1400px;
@@ -428,7 +413,7 @@ section {
 }
 
 
-/******BACK TO TOP*******/
+/******************************************** BACK TO TOP **********************************************************/
 .back-to-top {
     position:fixed;
     z-index:8888;
@@ -438,7 +423,7 @@ section {
     width:60px;
     height:60px;
     background:var(--main-accent);
-    transition:350ms ease;    
+    transition:var(--transition);    
 }
 
 .back-to-top.active {
@@ -471,26 +456,29 @@ section {
     outline: 2px solid var(--light-text);
 }
 
-/*******HEADER*****/
+
+/************************************ HEADER***************************************/
 
 .link-decoration {
     position:relative;
+    transition:color var(--transition);
 }
 
 .link-decoration::before {
     position:absolute;
     content:"";
     width:100%;
-    height:3px;
+    height:2px;
     background:var(--gradient);
     bottom:-0.4rem;
-    transition:transform 250ms ease-in-out;
+    transition:transform var(--transition);
     transform:scaleX(0);
     transform-origin:bottom right;
 }
 
+.link-decoration:hover,
 .link-decoration:focus {
-    
+    color:var(--main-accent);
 }
 
 .link-decoration:hover::before,
@@ -499,16 +487,13 @@ section {
     transform:scaleX(1);
 }
 
-
-
 .main-header {
     top:0;
     padding: 1rem 0;
     position:fixed;
     width:100%;
-    z-index:9999;
-    
-    transition:350ms ease;
+    z-index:9999;    
+    transition:var(--transition);
 }
 
 .main-header.active {
@@ -527,7 +512,7 @@ section {
 }
 
 .main-navigation {
-    transition: 350ms ease;
+    transition: var(--transition);
 }
 
 .main-navigation > ul {
@@ -567,7 +552,7 @@ section {
     height:3px;
     border-radius:10px;
     background:var(--main-color);
-    transition:250ms ease;
+    transition:var(--transition);
     --transform-value:calc(0.2rem + 3px);
 }
 
@@ -626,7 +611,7 @@ section {
     }
 }
 
-/***************** MAIN HERO **************/
+/************************************* MAIN HERO *****************************************************/
 
 .main-hero {
     
@@ -651,7 +636,7 @@ section {
     font-size:clamp(1.3rem, 2vw, 1.8rem);
     font-family: inherit;
     display:block;
-    transition: transform 250ms ease-in, outline-offset 250ms ease-in, outline 250ms ease-in;
+    transition: var(--transition);
 }
 
 .hero-button:hover,
@@ -662,7 +647,7 @@ section {
 }
 
 
-/********** SERVICES *********/
+/********************************************************* SERVICES ********************************************************************/
 
 .services {
     display:flex;
@@ -712,7 +697,7 @@ section {
 
 }
 
-/******* PHRASE *********/
+/********************************************* PHRASE ***********************************************************/
 
 .phrase {
     background:var(--main-accent);
@@ -735,7 +720,7 @@ section {
 }
 
 
-/****** TECHNOLOGIES *******/
+/**************************************************** TECHNOLOGIES *****************************************************/
 
 .technologies {
     display:flex;
@@ -756,7 +741,7 @@ section {
     width:20vmin;
     max-width:90px;
     filter:grayscale(100%);
-    transition:350ms ease;
+    transition:var(--transition);
 }
 
 .has-snippet {
@@ -788,7 +773,7 @@ section {
     z-index: 1;
     visibility: hidden;
     opacity: 0;
-    transition: 250ms ease;
+    transition: var(--transition);
 }
 
 .has-snippet::before {
@@ -851,7 +836,7 @@ section {
 
 
 
-/*********** PROFILES ***************/
+/************************************************************ PROFILES ********************************************************************/
 
 
 .profiles {
@@ -953,7 +938,7 @@ section {
     }
 }
 
-/*************** ABOUT ***************/
+/********************************************************* ABOUT *****************************************************************/
 
 .about {
    padding-inline:0;
@@ -1003,7 +988,7 @@ section {
 }
 
 
-/***** CONTACT ******/
+/************************************************************** CONTACT *****************************************************************/
 
 .contact {
     display:flex;
@@ -1036,11 +1021,15 @@ section {
     padding:1.5rem 1rem;
     border:1px solid var(--main-color-400);
     font-family: inherit;
+    transition:background var(--transition);
 }
 
 .form-container input:focus,
 .form-container textarea:focus {
-    border:2px solid var(--main-accent);
+    outline:2px solid var(--main-accent);
+    border:1px solid transparent;
+    outline-offset:0;
+    background:var(--main-color-200);
 }
 
 .form-button {
@@ -1051,7 +1040,7 @@ section {
     padding:1.5rem;
     font-size:1rem;
     font-family: inherit;
-    transition:350ms ease;
+    transition:var(--transition);
     background-size:200%;
     animation-play-state: paused;
     animation-name: bg;
@@ -1078,7 +1067,7 @@ section {
 
 
 
-/********* FOOTER *************/
+/***************************************************** FOOTER **********************************************************************/
 
 footer  {
     display:flex;
@@ -1103,7 +1092,7 @@ footer img {
 
 footer a {
     color:var(--light-text);
-    transition:color 350ms ease;
+    transition:color var(--transition);
 }
 
 footer a:hover {
