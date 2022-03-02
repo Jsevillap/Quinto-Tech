@@ -85,7 +85,14 @@ note: |
 
 category: typography
 */
-h1 { margin: 0.67em 0; }
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 { 
+    margin:0; 
+}
 
 
 /* @docs
@@ -238,7 +245,7 @@ category: legacy browsers
 
 
 
-/* Quinto Tech Webstie CSS */
+/*********** Quinto Tech Webstie CSS ***********/
 
 
 
@@ -259,7 +266,7 @@ category: legacy browsers
 
 
 ::selection {
-    background:var(--main-accent);
+    background:var(--main-accent-900);
     color:var(--light-text);
 }
 
@@ -268,27 +275,60 @@ category: legacy browsers
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
-  }
+}
   
   /* Track */
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #f1f1f100; 
-  }
+ }
    
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: var(--main-color-600); 
-  }
+}
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: var(--main-color); 
-  }
+}
+
+
+html,
+body {
+      height:100%;
+      scroll-behavior: smooth;
+      scroll-padding:106px;
+      scrollbar-color: var(--main-color-600) var(--main-color-200);
+      scrollbar-width: thin;
+}
+  
+body {
+      
+      overflow-x:hidden;
+      color:var(--main-color, black);
+      font-family: 'Ubuntu', sans-serif;
+      
+  
+ }
 
 
 a {
     text-decoration: none;
     color:var(--main-color);
+}
+
+
+img {
+    display:block;
+    max-width:100%;
+}
+
+section {
+    min-height:calc(100vh - 98px);
+}
+
+section:focus {
+    outline:none;
 }
 
 .slide-in {
@@ -309,14 +349,6 @@ a {
     }
 }
 
-
-.big-title,
-.title,
-.subtitle,
-.subheading,
-h3 {
-    margin:0;
-}
 
 .big-title {
     font-size:clamp(3.8rem, 10vw, 104px);
@@ -376,36 +408,9 @@ h3 {
 }
 
 
-html,
-body {
-    height:100%;
-    scroll-behavior: smooth;
-    scroll-padding:106px;
-    scrollbar-color: var(--main-color-600) var(--main-color-200);
-    scrollbar-width: thin;
-}
 
-body {
-    
-    overflow-x:hidden;
-    color:var(--main-color, black);
-    font-family: 'Ubuntu', sans-serif;
-    
 
-}
 
-img {
-    display:block;
-    max-width:100%;
-}
-
-section {
-    min-height:calc(100vh - 98px);
-}
-
-section:focus {
-    outline:none;
-}
 
 .container {
     width:100%;

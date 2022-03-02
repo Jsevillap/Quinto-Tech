@@ -1,10 +1,11 @@
-const toggle = document.querySelector(".main-nav-toggle");
-const navbar = document.querySelector(".main-navigation");
-const toggleLines = document.querySelectorAll(".main-toggle-line");
-const slideInElements = document.querySelectorAll(".slide-in");
-const backToTop = document.querySelector(".back-to-top");
-const mainHeader = document.querySelector(".main-header");
-const navLinks = document.querySelectorAll(".link-decoration");
+const
+    toggle = document.querySelector(".main-nav-toggle"),
+    navbar = document.querySelector(".main-navigation"),
+    toggleLines = document.querySelectorAll(".main-toggle-line"),
+    slideInElements = document.querySelectorAll(".slide-in"),
+    backToTop = document.querySelector(".back-to-top"),
+    mainHeader = document.querySelector(".main-header"),
+    navLinks = document.querySelectorAll(".link-decoration");
 
 
 const backToTopFunction = () => {
