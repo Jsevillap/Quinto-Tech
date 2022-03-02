@@ -91,7 +91,8 @@ h2,
 h3,
 h4,
 h5,
-h6 { 
+h6,
+p { 
     margin:0; 
 }
 
@@ -366,7 +367,7 @@ section {
     font-size:clamp(1.1rem, 2vw, var(--max-font-size));
     text-align: center;
     line-height: 1.4;
-    max-width:680px;
+    max-width:50ch;
 }
 
 .gradient-text {
@@ -954,6 +955,11 @@ section {
     align-items: center;
     padding:0 2rem;
     width:100%;
+}
+
+.about-text-container {
+    display:grid;
+    gap:2rem;
 }
 
 .about-text-container .title{
