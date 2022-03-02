@@ -249,7 +249,7 @@ category: legacy browsers
     --main-accent-900:#0C2C77;
     --main-color:#000;
     --main-color-600: hsl(0, 0%, 40%);
-    --main-color-400: hsl(0, 0%, 80%);
+    --main-color-400: hsl(0, 0%, 75%);
     --main-color-200: hsl(0, 0%, 96%);
     --light-text:#ffffff;
     --gradient:linear-gradient(45deg, var(--main-accent-900), var(--main-accent));
@@ -319,7 +319,7 @@ h3 {
 }
 
 .big-title {
-    font-size:clamp(3.6rem, 10vw, 104px);
+    font-size:clamp(3.8rem, 10vw, 104px);
     font-weight: bold;
     text-align: center;
     line-height:0.9;
@@ -461,7 +461,6 @@ section:focus {
     background:var(--main-color);
     cursor:pointer;
     outline: 2px solid var(--light-text);
-    box-shadow:0 0 10px 5px var(--main-color-600);
 }
 
 /*******HEADER*****/
@@ -500,11 +499,12 @@ section:focus {
     position:fixed;
     width:100%;
     z-index:9999;
-    background:var(--light-text);
+    
     transition:350ms ease;
 }
 
 .main-header.active {
+    background:var(--light-text);
     box-shadow:0 0 10px hsl(0, 0%, 0%, 0.2);
 }
 
@@ -916,9 +916,11 @@ section:focus {
 /***** CONTACT ******/
 
 .contact {
-    display:grid;
-    place-items: center;
-    gap:2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;
 }
 
 .form-container {
@@ -942,13 +944,14 @@ section:focus {
 .form-container textarea {
     width:100%;    
     padding:1.5rem 1rem;
-    border:2px solid var(--main-accent);
+    border:1px solid var(--main-color-400);
     font-family: inherit;
 }
 
 .form-container input:focus,
 .form-container textarea:focus {
-    outline:2px solid var(--main-accent-900);
+    outline:none;
+    border:2px solid var(--main-accent);
 }
 
 .form-button {
@@ -1014,7 +1017,10 @@ footer a {
     transition:color 350ms ease;
 }
 
-footer a:hover,
+footer a:hover {
+    color:var(--main-accent);
+}
+
 footer a:focus {
     color:var(--main-accent);
     outline: 1px solid var(--main-accent);
@@ -1026,5 +1032,3 @@ footer a:focus {
         flex-direction: column;
     }
 }
-
-

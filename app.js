@@ -9,12 +9,15 @@ const navLinks = document.querySelectorAll(".link-decoration");
 
 const backToTopFunction = () => {
 
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.documentElement.scrollTop > 20) {
         backToTop.classList.add("active");
         mainHeader.classList.add("active");
     } else {
         backToTop.classList.remove("active");
-        mainHeader.classList.remove("active");
+        if (toggle.getAttribute("aria-expanded") === "false") {
+            mainHeader.classList.remove("active");
+        }
+
 
     }
 };
@@ -32,6 +35,11 @@ toggle.addEventListener("click", () => {
     toggleLines.forEach(line => {
         line.classList.toggle("active");
     });
+
+    if (document.documentElement.scrollTop < 20) {
+        mainHeader.classList.toggle("active");
+    }
+
 
 });
 
