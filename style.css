@@ -20,7 +20,8 @@ category: global
 */
 *, *::before, *::after { 
     box-sizing: border-box;
-    outline-offset: 3px;
+    outline-offset: 4px;
+    outline:none;
  }
 
 
@@ -327,10 +328,6 @@ section {
     min-height:calc(100vh - 98px);
 }
 
-section:focus {
-    outline:none;
-}
-
 .slide-in {
     transform:translateY(110%);
     opacity:0;
@@ -487,7 +484,7 @@ section:focus {
 }
 
 .link-decoration:focus {
-    outline:2px solid var(--main-accent);
+    
 }
 
 .link-decoration:hover::before,
@@ -754,9 +751,64 @@ section:focus {
     transition:350ms ease;
 }
 
-.tech-logo-container img:hover {
+.has-snippet {
+    position:relative;
+}
+
+.has-snippet:hover {
+    cursor:pointer;
+}
+
+.has-snippet:focus {
+    outline: 2px solid var(--main-accent);
+}
+
+.has-snippet:hover img,
+.has-snippet:focus img{
     filter:grayscale(0);
 }
+
+.has-snippet::before,
+.has-snippet::after {
+    content:"";
+    position:absolute;
+    background:var(--main-color);
+    color:var(--light-text);
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 250ms ease;
+}
+
+.has-snippet::before {
+    width:10px;
+    height:10px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    top:1.5rem;
+}
+
+.has-snippet::after {
+    content:attr(data-name);
+    text-align: center;
+    font-size: 0.9rem;
+    padding:0.3rem 2rem;
+}
+
+
+.has-snippet:hover::before,
+.has-snippet:hover::after,
+.has-snippet:focus::before,
+.has-snippet:focus::after {
+    transform:translateY(-40px) translateX(-50%);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
 
 @media screen and (max-width:1440px) {
     .tech-logo-container {
@@ -955,7 +1007,6 @@ section:focus {
 
 .form-container input:focus,
 .form-container textarea:focus {
-    outline:none;
     border:2px solid var(--main-accent);
 }
 
