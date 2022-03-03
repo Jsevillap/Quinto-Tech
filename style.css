@@ -481,6 +481,7 @@ section {
     text-align: center;  
     transition:var(--transition);
     border-radius:0 10px 10px 0;
+    z-index: 99999;
 }
 
 
@@ -708,6 +709,15 @@ section {
     .main-navigation > ul li:not(:first-of-type) {
         border-top:1px solid var(--main-color-400);
     }
+}
+
+@media screen and (max-height:450px) {
+    
+    .main-navigation.active {
+        overflow-y: scroll;
+        max-height: 50vh;
+    }
+    
 }
 
 /************************************* MAIN HERO *****************************************************/

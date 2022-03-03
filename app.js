@@ -87,16 +87,16 @@ colorSelectors.forEach(selector => {
                 changeColorProperties("#2C77D1", "#0C2C77");
                 break;
             case "purple":
-                changeColorProperties("#AE39E4", "#45135B");
+                changeColorProperties("#AE39E4", "#5D0684");
                 break;
             case "orange":
-                changeColorProperties("#DC3A04", "#6A1808");
+                changeColorProperties("#DC3A04", "#8C1700");
                 break;
             case "pink":
-                changeColorProperties("#E9045C", "#48041E");
+                changeColorProperties("#E9045C", "#BB004F");
                 break;
             case "green":
-                changeColorProperties("#07B7A6", "#004841");
+                changeColorProperties("#07B7A6", "#016f63");
                 break;
 
         }
