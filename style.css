@@ -22,6 +22,7 @@ category: global
     box-sizing: border-box;
     outline-offset: 4px;
     outline:none;
+    transition: color 350ms ease, background 350ms ease, fill 350ms ease;
  }
 
 
@@ -260,8 +261,15 @@ category: legacy browsers
     --main-color-600: hsl(0, 0%, 40%);
     --main-color-400: hsl(0, 0%, 75%);
     --main-color-200: hsl(0, 0%, 96%);
+    --main-color-transparency: hsl(0, 0%, 0%, 0.5);
+    --soft-shadow:0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
     --light-text:#ffffff;
-    --gradient:linear-gradient(45deg, var(--main-accent-900), var(--main-accent));
+    --gradient:linear-gradient(45deg, var(--main-accent-900) 5%, var(--main-accent) 60%, var(--main-accent) 100%);
     --transition: 350ms ease;
 
 }
@@ -309,6 +317,7 @@ body {
       overflow-x:hidden;
       color:var(--main-color, black);
       font-family: 'Ubuntu', sans-serif;  
+      
  }
 
 a {
@@ -456,7 +465,86 @@ section {
     cursor:pointer;
     outline: 2px solid var(--light-text);
 }
+/************************************ COLOR CHANGER ***************************************************/
 
+.color-changer {
+    position:fixed;
+    bottom:30px;
+    left:-8px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding: 1rem 0.5rem;
+    background:var(--light-text);
+    color:var(--main-color-transparency);
+    font-size:0.9rem;
+    box-shadow: var(--soft-shadow);
+    text-align: center;  
+    transition:var(--transition);
+    border-radius:0 10px 10px 0;
+}
+
+
+.color-schemes-menu {
+    padding-right:0.5rem;
+    display:flex;
+    gap:0.5rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 0;
+    max-height:0;
+    visibility: hidden;
+    opacity: 0;
+    transition:var(--transition);
+}
+
+.color-changer:hover {
+    left:0;
+}
+
+.color-changer:hover .color-schemes-menu {
+    max-width: 200px;
+    max-height:300px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.color-schemes-menu.active {
+    max-width: 200px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.color-scheme {
+    width:40px;
+    height: 40px;
+    background:var(--main-color);
+    transition:var(--transition);
+}
+
+.color-scheme:hover {
+    cursor:pointer;
+    transform:rotate(10deg);
+}
+
+.blue-scheme {
+    background:#2C77D1;
+}
+
+.hot-pink-scheme {
+    background:#E9045C;
+}
+
+.purple-scheme {
+    background:#AE39E4;
+}
+
+.orange-scheme {
+    background:#DC3A04;
+}
+
+.green-scheme {
+    background:#07B7A6;
+}
 
 /************************************ HEADER***************************************/
 
@@ -502,9 +590,19 @@ section {
     box-shadow:0 0 10px hsl(0, 0%, 0%, 0.2);
 }
 
-.main-header  img {
+.main-header  svg {
     width:clamp(200px, 15%, 250px);
 }
+
+
+.logo-accent-color {
+    fill:var(--main-accent);
+}
+
+.logo-dark-color {
+    fill:var(--main-color);
+}
+
 
 .main-header .container {
     display:flex;
@@ -664,7 +762,7 @@ section {
 }
 
 .services .subtitle {
-    color:var(--main-accent);
+    color:var(--main-color);
 }
 
 .services-list {
@@ -673,8 +771,13 @@ section {
     gap:10rem;
 }
 
-.services-list img {
+.services-list svg {
     max-width:200px;
+}
+
+
+.service-illustration-color {
+    fill:var(--main-accent);
 }
 
 .service {
@@ -851,13 +954,21 @@ section {
 }
 
 
-.absolute-icon img {
+.absolute-icon svg {
     width:50vw;
     max-width:700px;
     position:absolute;
     left:-10vw;
     bottom:-15%;
 
+}
+
+.icon-fill-color {
+    fill:var(--main-accent);
+}
+
+.icon-center-color {
+    fill:var(--light-text);
 }
 
 .profiles-container {
@@ -970,6 +1081,15 @@ section {
 
 .about-image-container {
     width:100%;
+    position:relative;
+}
+
+.about-image-container::before {
+    content:"";
+    position:absolute;
+    inset:0;
+    background:var(--main-accent);
+    mix-blend-mode: multiply;
 }
 
 .about-image-container img{
@@ -1092,8 +1212,12 @@ footer .container {
     padding:0;
 }
 
-footer img {
+footer svg {
     width:150px;
+}
+
+.logo-light-color {
+    fill:var(--light-text);
 }
 
 footer a {
@@ -1114,5 +1238,6 @@ footer a:focus {
     
     footer .container{
         flex-direction: column;
+        gap:1rem;
     }
 }
