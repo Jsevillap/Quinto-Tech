@@ -1033,7 +1033,7 @@ section {
     font-size: 1.8rem;
   }
 
-  .absolute-icon img {
+  .absolute-icon svg {
     top: 20%;
     left: -20%;
   }
@@ -1046,7 +1046,7 @@ section {
 }
 
 @media screen and (min-width: 3000px) {
-  .absolute-icon img {
+  .absolute-icon svg {
     display: none;
   }
   .profiles-container {
