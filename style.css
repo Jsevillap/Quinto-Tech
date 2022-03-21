@@ -1004,13 +1004,13 @@ section {
 }
 
 @media screen and (max-width: 1600px) {
-  .absolute-icon img {
+  .absolute-icon svg {
     width: 40vw;
   }
 }
 
 @media screen and (max-width: 1300px) {
-  .absolute-icon img {
+  .absolute-icon svg {
     bottom: -5%;
   }
 }
