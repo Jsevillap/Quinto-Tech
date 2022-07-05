@@ -447,7 +447,8 @@ section {
 .container {
   width: 100%;
   max-width: 1400px;
-  padding-inline: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin: 0 auto;
 }
 
@@ -650,8 +651,11 @@ section {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 1.5rem;
   padding: 0.5rem 1rem;
+}
+
+.main-navigation > ul > * + * {
+  margin-left: 1.5rem;
 }
 
 .main-navigation > ul li {
@@ -726,6 +730,10 @@ section {
     align-items: center;
     padding: 0;
     gap: 0;
+  }
+
+  .main-navigation > ul > * + * {
+    margin-left: 0rem;
   }
 
   .main-navigation > ul li {
@@ -1136,7 +1144,10 @@ section {
 .input-container {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+}
+
+.input-container input:first-child {
+  margin-right: 1rem;
 }
 
 .form-container input,
@@ -1185,6 +1196,11 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .input-container input:first-child {
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
 }
 
