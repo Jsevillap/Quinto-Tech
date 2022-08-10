@@ -1,606 +1,866 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Quinto Technologies is a professional staffing organization that specializes in the placement of Information Technology Professionals for organizations"
+    />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#2C77D1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Quinto Technologies is a professional staffing organization that specializes in the placement of Information Technology Professionals for organizations">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#2C77D1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
     <title>Quinto Technologies</title>
-</head>
+  </head>
 
-<body>
-
-
+  <body>
+    <div class="pre-loader"></div>
     <header class="main-header">
-
-        <div class="container">
-
-
-
-            <svg version="1.1" id="quinto-logo" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 368 136"
-                style="enable-background:new 0 0 368 136;" xml:space="preserve">
-
-                <title>Quinto Technologies Logo</title>
-                <g>
-                    <g>
-                        <g>
-                            <polygon points="367.5,82.4 352.4,82.4 352.4,43.6 313.6,43.6 313.6,28.5 367.5,28.5 			" />
-                            <polygon points="352.4,97.5 298.5,97.5 298.5,43.6 313.6,43.6 313.6,82.4 352.4,82.4 			" />
-                        </g>
-                        <rect x="325.2" y="55.2" class="logo-accent-color" width="15.6" height="15.6" />
-                    </g>
-                    <g>
-                        <path class="logo-dark-color" d="M38.4,94.2c-1.8,1-3.8,1.8-5.9,2.4s-4.3,0.9-6.6,0.9c-3.8,0-7.3-0.7-10.4-2.2s-5.8-3.4-8-5.8
+      <div class="container">
+        <svg
+          version="1.1"
+          id="quinto-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 368 136"
+          style="enable-background: new 0 0 368 136"
+          xml:space="preserve"
+        >
+          <title>Quinto Technologies Logo</title>
+          <g>
+            <g>
+              <g>
+                <polygon
+                  points="367.5,82.4 352.4,82.4 352.4,43.6 313.6,43.6 313.6,28.5 367.5,28.5 			"
+                />
+                <polygon
+                  points="352.4,97.5 298.5,97.5 298.5,43.6 313.6,43.6 313.6,82.4 352.4,82.4 			"
+                />
+              </g>
+              <rect
+                x="325.2"
+                y="55.2"
+                class="logo-accent-color"
+                width="15.6"
+                height="15.6"
+              />
+            </g>
+            <g>
+              <path
+                class="logo-dark-color"
+                d="M38.4,94.2c-1.8,1-3.8,1.8-5.9,2.4s-4.3,0.9-6.6,0.9c-3.8,0-7.3-0.7-10.4-2.2s-5.8-3.4-8-5.8
 			s-3.9-5.2-5.2-8.3c-1.2-3.1-1.8-6.3-1.8-9.7c0-3.4,0.6-6.6,1.9-9.7c1.3-3.1,3.1-5.9,5.3-8.3c2.3-2.4,5-4.3,8.1-5.7
 			s6.5-2.1,10.2-2.1c3.8,0,7.3,0.8,10.4,2.3c3.1,1.5,5.8,3.5,8,6s3.9,5.2,5.1,8.4c1.2,3.1,1.8,6.3,1.8,9.5c0,3.3-0.6,6.4-1.7,9.4
 			c-1.2,3-2.8,5.7-4.9,8l7.4,8.1H41L38.4,94.2z M25.9,86.9c1.9,0,3.6-0.3,5-0.9l-8.2-9.1h11.1l3.2,3.5c0.8-1.3,1.3-2.8,1.7-4.3
 			s0.6-3.1,0.6-4.7c0-2-0.3-3.9-0.9-5.7c-0.6-1.9-1.4-3.5-2.6-4.9c-1.2-1.4-2.6-2.6-4.2-3.4C30,56.5,28.1,56,25.9,56
 			c-2.3,0-4.2,0.4-5.9,1.3c-1.7,0.9-3.1,2.1-4.2,3.5c-1.1,1.5-2,3.1-2.5,5c-0.6,1.9-0.8,3.7-0.8,5.7s0.3,3.9,0.9,5.7
-			c0.6,1.9,1.4,3.5,2.6,4.9c1.1,1.4,2.5,2.6,4.2,3.4C21.9,86.5,23.8,86.9,25.9,86.9z" />
-                        <path class="logo-dark-color" d="M80.2,87c2,0,3.7-0.4,5.1-1.3c1.4-0.8,2.5-2,3.4-3.4s1.5-3,1.8-4.8c0.4-1.8,0.5-3.6,0.5-5.5V45.9h11.8v26.2
+			c0.6,1.9,1.4,3.5,2.6,4.9c1.1,1.4,2.5,2.6,4.2,3.4C21.9,86.5,23.8,86.9,25.9,86.9z"
+              />
+              <path
+                class="logo-dark-color"
+                d="M80.2,87c2,0,3.7-0.4,5.1-1.3c1.4-0.8,2.5-2,3.4-3.4s1.5-3,1.8-4.8c0.4-1.8,0.5-3.6,0.5-5.5V45.9h11.8v26.2
 			c0,3.6-0.4,6.9-1.3,10s-2.3,5.8-4.1,8.1c-1.9,2.3-4.2,4.1-7.1,5.4s-6.3,2-10.2,2c-4.1,0-7.6-0.7-10.5-2.1s-5.2-3.3-7-5.6
 			c-1.8-2.3-3.1-5-4-8.1c-0.8-3.1-1.3-6.3-1.3-9.7V45.9h11.8v26.2c0,2,0.2,3.8,0.6,5.6c0.4,1.8,1,3.4,1.9,4.8s2,2.5,3.4,3.3
-			C76.5,86.6,78.2,87,80.2,87z" />
-                        <path class="logo-dark-color"
-                            d="M112.1,97.1V45.9h11.8v51.2C123.9,97.1,112.1,97.1,112.1,97.1z" />
-                        <path class="logo-dark-color"
-                            d="M145.5,67.8v29.3h-11.8V45.9h9.2L166.8,76V45.9h11.8v51.2h-9.5L145.5,67.8z" />
-                        <path class="logo-dark-color" d="M227.5,56.3h-15.6v40.8h-11.8V56.3h-15.7V45.9h43.1V56.3z" />
-                        <path class="logo-dark-color" d="M253.3,97.5c-3.8,0-7.3-0.7-10.4-2.2c-3.1-1.5-5.8-3.5-8-5.9s-3.9-5.2-5.2-8.3c-1.2-3.1-1.8-6.3-1.8-9.7
+			C76.5,86.6,78.2,87,80.2,87z"
+              />
+              <path
+                class="logo-dark-color"
+                d="M112.1,97.1V45.9h11.8v51.2C123.9,97.1,112.1,97.1,112.1,97.1z"
+              />
+              <path
+                class="logo-dark-color"
+                d="M145.5,67.8v29.3h-11.8V45.9h9.2L166.8,76V45.9h11.8v51.2h-9.5L145.5,67.8z"
+              />
+              <path
+                class="logo-dark-color"
+                d="M227.5,56.3h-15.6v40.8h-11.8V56.3h-15.7V45.9h43.1V56.3z"
+              />
+              <path
+                class="logo-dark-color"
+                d="M253.3,97.5c-3.8,0-7.3-0.7-10.4-2.2c-3.1-1.5-5.8-3.5-8-5.9s-3.9-5.2-5.2-8.3c-1.2-3.1-1.8-6.3-1.8-9.7
 			c0-3.4,0.6-6.6,1.9-9.7c1.3-3.1,3.1-5.9,5.3-8.3c2.3-2.4,5-4.3,8.1-5.7s6.5-2.1,10.2-2.1c3.8,0,7.3,0.7,10.4,2.2s5.8,3.5,8,5.9
 			c2.2,2.5,3.9,5.2,5.1,8.4c1.2,3.1,1.8,6.3,1.8,9.5c0,3.4-0.6,6.6-1.9,9.7s-3,5.9-5.3,8.3s-5,4.3-8.1,5.7
 			C260.4,96.8,257,97.5,253.3,97.5z M240,71.6c0,2,0.3,3.9,0.9,5.7c0.6,1.9,1.4,3.5,2.6,4.9c1.1,1.4,2.5,2.6,4.2,3.5
 			s3.6,1.3,5.8,1.3c2.3,0,4.2-0.5,5.9-1.4c1.7-0.9,3.1-2.1,4.2-3.6s1.9-3.1,2.5-5s0.8-3.7,0.8-5.7s-0.3-3.9-0.9-5.7
 			c-0.6-1.9-1.4-3.5-2.6-4.9s-2.6-2.5-4.2-3.4c-1.7-0.8-3.6-1.3-5.7-1.3c-2.3,0-4.2,0.4-5.9,1.3c-1.7,0.9-3.1,2.1-4.2,3.5
-			c-1.1,1.4-2,3.1-2.5,4.9C240.3,67.7,240,69.6,240,71.6z" />
-                    </g>
-                </g>
-            </svg>
+			c-1.1,1.4-2,3.1-2.5,4.9C240.3,67.7,240,69.6,240,71.6z"
+              />
+            </g>
+          </g>
+        </svg>
 
-
-
-
-            <div class="main-nav-toggle" aria-controls="main-navigation" aria-label="Toggle navigation"
-                aria-expanded="false" tabindex="0">
-                <div class="main-toggle-line"></div>
-                <div class="main-toggle-line"></div>
-                <div class="main-toggle-line"></div>
-            </div>
-            <nav class="main-navigation">
-                <ul>
-                    <li><a class="link-decoration" href="#services">Services</a></li>
-                    <li><a class="link-decoration" href="#technologies">Technologies</a></li>
-                    <li><a class="link-decoration" href="#profiles">Profiles</a></li>
-                    <li><a class="link-decoration" href="#about">About</a></li>
-                    <li><a class="link-decoration" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-
-
+        <div
+          class="main-nav-toggle"
+          aria-controls="main-navigation"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          tabindex="0"
+        >
+          <div class="main-toggle-line"></div>
+          <div class="main-toggle-line"></div>
+          <div class="main-toggle-line"></div>
         </div>
-
+        <nav class="main-navigation">
+          <ul>
+            <li><a class="link-decoration" href="#services">Services</a></li>
+            <li>
+              <a class="link-decoration" href="#technologies">Technologies</a>
+            </li>
+            <li><a class="link-decoration" href="#profiles">Profiles</a></li>
+            <li><a class="link-decoration" href="#about">About</a></li>
+            <li><a class="link-decoration" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
+      <section
+        class="main-hero container"
+        tabindex="0"
+        aria-label="Hero section IT staffing"
+      >
+        <h1 class="big-title slide-in">
+          Dedicated <br />
+          <span class="gradient-text">IT staffing</span>
+        </h1>
+        <p
+          class="subheading slide-in"
+          style="--animation-delay: 0.4s; --max-font-size: 1.5rem"
+        >
+          Build dedicated and specialized development teams and reduce
+          time-to-market, launch new products faster and seize market
+          opportunities.
+        </p>
+        <a
+          href="#contact"
+          class="hero-button slide-in"
+          style="--animation-delay: 0.9s"
+          >Let's build a team</a
+        >
+      </section>
 
-        <section class="main-hero container" tabindex="0" aria-label="Hero section IT staffing">
-            <h1 class="big-title slide-in">Dedicated <br> <span class="gradient-text">IT staffing</span> </h1>
-            <p class="subheading slide-in" style="--animation-delay:0.4s; --max-font-size:1.5rem">Build dedicated and
-                specialized development
-                teams and reduce time-to-market,
-                launch
-                new products faster and seize market opportunities.</p>
-            <a href="#contact" class="hero-button slide-in" style="--animation-delay:0.9s">Let's
-                build a
-                team</a>
+      <section
+        class="container-full-width services container-padding"
+        id="services"
+        tabindex="0"
+        aria-label="Services"
+      >
+        <h2 class="title">Services</h2>
 
-        </section>
+        <div class="services-list">
+          <div class="service">
+            <svg
+              version="1.1"
+              id="profiling-illustration"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 200 200"
+              style="enable-background: new 0 0 200 200"
+              xml:space="preserve"
+            >
+              <title>Profiling service illustration</title>
+              <g>
+                <g>
+                  <ellipse
+                    class="service-illustration-color"
+                    cx="107"
+                    cy="70.3"
+                    rx="34.1"
+                    ry="38.7"
+                  />
+                  <polygon
+                    class="service-illustration-color"
+                    points="163.6,176.4 50.3,176.4 35.7,118.1 81.6,118.1 107,136.1 134.6,118.1 178.3,118.1 		"
+                  />
+                </g>
+                <g>
+                  <path
+                    d="M96.9,106.9c-20.5,0-37.1-18.7-37.1-41.7s16.7-41.7,37.1-41.7c20.5,0,37.1,18.7,37.1,41.7S117.3,106.9,96.9,106.9z
+			 M96.9,29.6c-17.2,0-31.1,16-31.1,35.7s14,35.7,31.1,35.7c17.2,0,31.1-16,31.1-35.7S114,29.6,96.9,29.6z"
+                  />
+                  <path
+                    d="M155.9,174.4h-118l-16.2-64.3h50.8L97,127.5l26.7-17.4H172L155.9,174.4z M42.5,168.4h108.7l13.1-52.3h-38.9l-28.6,18.6
+			l-26.2-18.6H29.4L42.5,168.4z"
+                  />
+                </g>
+              </g>
+            </svg>
 
-        <section class="container-full-width services container-padding" id="services" tabindex="0"
-            aria-label="Services">
-            <h2 class="title">Services</h2>
+            <h4 class="subtitle">Profiling</h4>
+            <p class="subheading">
+              We analyze and define the best profile for your project and
+              organization
+            </p>
+          </div>
 
-            <div class="services-list">
-
-                <div class="service">
-
-
-
-                    <svg version="1.1" id="profiling-illustration" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
-                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
-
-
-                        <title>Profiling service illustration</title>
-                        <g>
-                            <g>
-                                <ellipse class="service-illustration-color" cx="107" cy="70.3" rx="34.1" ry="38.7" />
-                                <polygon class="service-illustration-color"
-                                    points="163.6,176.4 50.3,176.4 35.7,118.1 81.6,118.1 107,136.1 134.6,118.1 178.3,118.1 		" />
-                            </g>
-                            <g>
-                                <path d="M96.9,106.9c-20.5,0-37.1-18.7-37.1-41.7s16.7-41.7,37.1-41.7c20.5,0,37.1,18.7,37.1,41.7S117.3,106.9,96.9,106.9z
-			 M96.9,29.6c-17.2,0-31.1,16-31.1,35.7s14,35.7,31.1,35.7c17.2,0,31.1-16,31.1-35.7S114,29.6,96.9,29.6z" />
-                                <path d="M155.9,174.4h-118l-16.2-64.3h50.8L97,127.5l26.7-17.4H172L155.9,174.4z M42.5,168.4h108.7l13.1-52.3h-38.9l-28.6,18.6
-			l-26.2-18.6H29.4L42.5,168.4z" />
-                            </g>
-                        </g>
-                    </svg>
-
-
-
-                    <h4 class="subtitle">Profiling</h4>
-                    <p class="subheading">We analyze and define the best profile for your project and organization</p>
-                </div>
-
-                <div class="service">
-
-
-                    <svg version="1.1" id="hunting-illustration" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
-                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
-
-                        <title>Hunting service illustration</title>
-                        <g>
-                            <g>
-                                <g>
-                                    <ellipse class="service-illustration-color" cx="52.3" cy="37" rx="13.3" ry="15" />
-                                    <polygon class="service-illustration-color"
-                                        points="74.4,78.3 30.3,78.3 24.6,55.6 42.5,55.6 52.3,62.6 63.1,55.6 80.1,55.6 			" />
-                                </g>
-                                <g>
-                                    <g>
-                                        <path d="M48.4,51.3c-8,0-14.4-7.3-14.4-16.2s6.5-16.2,14.4-16.2s14.4,7.3,14.4,16.2C62.9,44,56.4,51.3,48.4,51.3z M48.4,21.2
-					c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9S55.1,21.2,48.4,21.2z" />
-                                    </g>
-                                    <g>
-                                        <path d="M71.4,77.5H25.5l-6.3-25h19.7l9.5,6.8l10.4-6.8h18.8L71.4,77.5z M27.3,75.2h42.2l5.1-20.3H59.5l-11.1,7.2l-10.2-7.2h-16
-					L27.3,75.2z" />
-                                    </g>
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <ellipse class="service-illustration-color" cx="136.9" cy="48.6" rx="13.3"
-                                        ry="15" />
-                                    <polygon class="service-illustration-color"
-                                        points="158.9,89.9 114.9,89.9 109.2,67.2 127.1,67.2 136.9,74.2 147.7,67.2 164.6,67.2 			" />
-                                </g>
-                                <g>
-                                    <g>
-                                        <path d="M133,62.8c-8,0-14.4-7.3-14.4-16.2s6.5-16.2,14.4-16.2s14.4,7.3,14.4,16.2C147.4,55.6,140.9,62.8,133,62.8z M133,32.7
-					c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9C145.1,39,139.7,32.7,133,32.7z" />
-                                    </g>
-                                    <g>
-                                        <path d="M155.9,89.1H110l-6.3-25h19.7l9.5,6.8l10.4-6.8h18.8L155.9,89.1z M111.9,86.7h42.2l5.1-20.3h-15.1L133,73.6l-10.2-7.2
-					h-16L111.9,86.7z" />
-                                    </g>
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <ellipse class="service-illustration-color" cx="55" cy="113.5" rx="13.3" ry="15" />
-                                    <polygon class="service-illustration-color"
-                                        points="77,154.8 33,154.8 27.3,132.1 45.2,132.1 55,139.1 65.8,132.1 82.7,132.1 			" />
-                                </g>
-                                <g>
-                                    <g>
-                                        <path d="M51.1,127.7c-8,0-14.4-7.3-14.4-16.2s6.5-16.2,14.4-16.2s14.4,7.3,14.4,16.2S59,127.7,51.1,127.7z M51.1,97.6
-					c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9C63.2,103.9,57.8,97.6,51.1,97.6z" />
-                                    </g>
-                                    <g>
-                                        <path d="M74,154H28.1l-6.3-25h19.7l9.5,6.8l10.4-6.8h18.8L74,154z M30,151.6h42.2l5.1-20.3H62.2L51,138.5l-10.2-7.2h-16
-					L30,151.6z" />
-                                    </g>
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <ellipse class="service-illustration-color" cx="126.7" cy="143.2" rx="13.3"
-                                        ry="15" />
-                                    <polygon class="service-illustration-color"
-                                        points="148.7,184.5 104.6,184.5 98.9,161.8 116.8,161.8 126.7,168.8 137.4,161.8 154.4,161.8 			" />
-                                </g>
-                                <g>
-                                    <g>
-                                        <path
-                                            d="M122.7,157.4c-8,0-14.4-7.3-14.4-16.2s6.5-16.2,14.4-16.2s14.4,7.3,14.4,16.2C137.2,150.2,130.7,157.4,122.7,157.4z
-					 M122.7,127.4c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9C134.9,133.6,129.4,127.4,122.7,127.4z" />
-                                    </g>
-                                    <g>
-                                        <path d="M145.7,183.7H99.8l-6.3-25h19.7l9.5,6.8l10.4-6.8H152L145.7,183.7z M101.6,181.3h42.2L149,161h-15.1l-11.1,7.2
-					l-10.2-7.2h-16L101.6,181.3z" />
-                                    </g>
-                                </g>
-                            </g>
-                            <path d="M134.2,111.8c-27.4,0-49.6-22.3-49.6-49.6c0-27.4,22.3-49.6,49.6-49.6c27.4,0,49.6,22.3,49.6,49.6
-		C183.8,89.5,161.6,111.8,134.2,111.8z M134.2,18.5c-24,0-43.6,19.6-43.6,43.6s19.6,43.6,43.6,43.6s43.6-19.6,43.6-43.6
-		C177.8,38.1,158.2,18.5,134.2,18.5z" />
-                        </g>
-                    </svg>
-
-
-
-
-
-                    <h4 class="subtitle">Hunting</h4>
-                    <p class="subheading">We find and recruit the best candidates for your organization</p>
-                </div>
-
-
-                <div class="service">
-
-                    <svg version="1.1" id="staffing-illustration" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
-                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
-
-
-                        <title>Staffing service illustration</title>
-                        <g>
-                            <g>
-                                <g>
-                                    <g>
-                                        <ellipse class="service-illustration-color" cx="66" cy="105.8" rx="13.3"
-                                            ry="15" />
-                                        <polygon class="service-illustration-color"
-                                            points="88.1,147.1 44,147.1 38.3,124.4 56.2,124.4 66,131.4 76.8,124.4 93.8,124.4 				" />
-                                    </g>
-                                    <g>
-                                        <g>
-                                            <path d="M62.1,120c-8,0-14.4-7.3-14.4-16.2s6.5-16.2,14.4-16.2s14.4,7.3,14.4,16.2C76.6,112.7,70.1,120,62.1,120z M62.1,89.9
-						c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9C74.2,96.2,68.8,89.9,62.1,89.9z" />
-                                        </g>
-                                        <g>
-                                            <path d="M85.1,146.3H39.2l-6.3-25h19.7l9.5,6.8l10.4-6.8h18.8L85.1,146.3z M41,143.9h42.2l5.1-20.3H73.2l-11.1,7.2l-10.2-7.2
-						h-16L41,143.9z" />
-                                        </g>
-                                    </g>
-                                </g>
-                                <g>
-                                    <g>
-                                        <ellipse class="service-illustration-color" cx="139.4" cy="105.8" rx="13.3"
-                                            ry="15" />
-                                        <polygon class="service-illustration-color"
-                                            points="161.4,147.1 117.3,147.1 111.7,124.4 129.5,124.4 139.4,131.4 150.1,124.4 167.1,124.4 				" />
-                                    </g>
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="M135.4,120c-8,0-14.4-7.3-14.4-16.2s6.5-16.2,14.4-16.2s14.4,7.3,14.4,16.2C149.9,112.7,143.4,120,135.4,120z
-						 M135.4,89.9c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9C147.6,96.2,142.1,89.9,135.4,89.9z" />
-                                        </g>
-                                        <g>
-                                            <path d="M158.4,146.3h-45.9l-6.3-25H126l9.5,6.8l10.4-6.8h18.8L158.4,146.3z M114.3,143.9h42.2l5.1-20.3h-15.1l-11.1,7.2
-						l-10.2-7.2h-16L114.3,143.9z" />
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                            <rect x="21.7" y="144.3" width="156.7" height="11.3" />
-                            <rect x="21.7" y="147.4" width="4.6" height="40.6" />
-                            <rect x="173.7" y="147.4" width="4.6" height="40.6" />
-                            <g>
-                                <g>
-                                    <g>
-                                        <ellipse class="service-illustration-color" cx="66" cy="30.2" rx="13.3"
-                                            ry="15" />
-                                        <polygon class="service-illustration-color"
-                                            points="88.1,71.5 44,71.5 38.3,48.8 56.2,48.8 66,55.8 76.8,48.8 93.8,48.8 				" />
-                                    </g>
-                                    <g>
-                                        <g>
-                                            <path d="M62.1,44.4c-8,0-14.4-7.3-14.4-16.2S54.2,12,62.1,12s14.4,7.3,14.4,16.2C76.6,37.1,70.1,44.4,62.1,44.4z M62.1,14.3
-						c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9C74.2,20.6,68.8,14.3,62.1,14.3z" />
-                                        </g>
-                                        <g>
-                                            <path d="M85.1,70.7H39.2l-6.3-25h19.7l9.5,6.8l10.4-6.8h18.8L85.1,70.7z M41,68.3h42.2L88.3,48H73.2l-11.1,7.2L51.9,48h-16
-						L41,68.3z" />
-                                        </g>
-                                    </g>
-                                </g>
-                                <g>
-                                    <g>
-                                        <ellipse class="service-illustration-color" cx="139.4" cy="30.2" rx="13.3"
-                                            ry="15" />
-                                        <polygon class="service-illustration-color"
-                                            points="161.4,71.5 117.3,71.5 111.7,48.8 129.5,48.8 139.4,55.8 150.1,48.8 167.1,48.8 				" />
-                                    </g>
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="M135.4,44.4c-8,0-14.4-7.3-14.4-16.2S127.5,12,135.4,12s14.4,7.3,14.4,16.2C149.9,37.1,143.4,44.4,135.4,44.4z
-						 M135.4,14.3c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9C147.6,20.6,142.1,14.3,135.4,14.3z" />
-                                        </g>
-                                        <g>
-                                            <path d="M158.4,70.7h-45.9l-6.3-25H126l9.5,6.8l10.4-6.8h18.8L158.4,70.7z M114.3,68.3h42.2l5.1-20.3h-15.1l-11.1,7.2L125.2,48
-						h-16L114.3,68.3z" />
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                            <rect x="21.7" y="68.7" width="156.7" height="11.3" />
-                            <rect x="21.7" y="71.8" width="4.6" height="40.6" />
-                            <rect x="173.7" y="71.8" width="4.6" height="40.6" />
-                        </g>
-                    </svg>
-
-
-                    <h4 class="subtitle">Staffing</h4>
-                    <p class="subheading">We make sure that your organization receives the talent you need</p>
-                </div>
-
-
-            </div>
-        </section>
-
-        <section class="container-full-width phrase" tabindex="0" aria-label="Quote">
-
-            <h2>Hassle free <span>IT</span> talent hiring and recruitment process</h2>
-
-        </section>
-
-        <section class="container technologies container-padding" id="technologies" tabindex="0"
-            aria-label="technologies">
-
-            <h2 class="title blue-text">technologies</h2>
-
-            <div class="tech-logo-container">
-
-                <div class="has-snippet" data-name=".Net" tabindex="0">
-                    <img src="assets/tech-logos/net.svg" alt="dot net logo" class="has-snippet">
-                </div>
-                <div class="has-snippet" data-name="Golang" tabindex="0">
-                    <img src="assets/tech-logos/go.svg" alt="golang logo">
-                </div>
-                <div class="has-snippet" data-name="C#" tabindex="0">
-                    <img src="assets/tech-logos/csharp.svg" alt="c sharp logo">
-                </div>
-                <div class="has-snippet" data-name="Python" tabindex="0">
-                    <img src="assets/tech-logos/python.svg" alt="pyhton logo">
-                </div>
-                <div class="has-snippet" data-name="PHP" tabindex="0">
-                    <img src="assets/tech-logos/php.svg" alt="php logo">
-                </div>
-                <div class="has-snippet" data-name="Nodejs" tabindex="0">
-                    <img src="assets/tech-logos/node.svg" alt="node js logo">
-                </div>
-                <div class="has-snippet" data-name="Java" tabindex="0">
-                    <img src="assets/tech-logos/java.svg" alt="java logo">
-                </div>
-                <div class="has-snippet" data-name="Kotlin" tabindex="0">
-                    <img src="assets/tech-logos/kotlin.svg" alt="kotlin logo">
-                </div>
-                <div class="has-snippet" data-name="React" tabindex="0">
-                    <img src="assets/tech-logos/react.svg" alt="react logo">
-                </div>
-                <div class="has-snippet" data-name="Vue" tabindex="0">
-                    <img src="assets/tech-logos/vue.svg" alt="vue logo">
-                </div>
-                <div class="has-snippet" data-name="Angular" tabindex="0">
-                    <img src="assets/tech-logos/angular.svg" alt="angular logo">
-                </div>
-                <div class="has-snippet" data-name="Swift" tabindex="0">
-                    <img src="assets/tech-logos/swift.svg" alt="swift logo">
-                </div>
-                <div class="has-snippet" data-name="Flutter" tabindex="0">
-                    <img src="assets/tech-logos/flutter.svg" alt="flutter logo">
-                </div>
-                <div class="has-snippet" data-name="MySQL" tabindex="0">
-                    <img src="assets/tech-logos/mysql.svg" alt="mysql logo">
-                </div>
-                <div class="has-snippet" data-name="MongoDB" tabindex="0">
-                    <img src="assets/tech-logos/mongo.svg" alt="mongodb logo">
-                </div>
-                <div class="has-snippet" data-name="PostgreSQL" tabindex="0">
-                    <img src="assets/tech-logos/postgres.svg" alt="postgresql logo">
-                </div>
-                <div class="has-snippet" data-name="Redis" tabindex="0">
-                    <img src="assets/tech-logos/redis.svg" alt="redis logo">
-                </div>
-                <div class="has-snippet" data-name="Javascript" tabindex="0">
-                    <img src="assets/tech-logos/javascript.svg" alt="javascript logo">
-                </div>
-                <div class="has-snippet" data-name="HTML" tabindex="0">
-                    <img src="assets/tech-logos/html.svg" alt="html logo">
-                </div>
-                <div class="has-snippet" data-name="CSS" tabindex="0">
-                    <img src="assets/tech-logos/css.svg" alt="css logo">
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section class="container-full-width container-padding profiles" id="profiles" tabindex="0"
-            aria-label="profiles">
-            <h2 class="title light-text">profiles</h2>
-
-            <div class="absolute-icon">
-
-
-                <svg version="1.1" id="logo-quinto-icon" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 69 69"
-                    style="enable-background:new 0 0 69 69;" xml:space="preserve">
-
-                    <title>Quinto Technologies Icon</title>
+          <div class="service">
+            <svg
+              version="1.1"
+              id="hunting-illustration"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 200 200"
+              style="enable-background: new 0 0 200 200"
+              xml:space="preserve"
+            >
+              <title>Hunting service illustration</title>
+              <g>
+                <g>
+                  <g>
+                    <ellipse
+                      class="service-illustration-color"
+                      cx="52.3"
+                      cy="37"
+                      rx="13.3"
+                      ry="15"
+                    />
+                    <polygon
+                      class="service-illustration-color"
+                      points="74.4,78.3 30.3,78.3 24.6,55.6 42.5,55.6 52.3,62.6 63.1,55.6 80.1,55.6 			"
+                    />
+                  </g>
+                  <g>
                     <g>
-                        <g>
-                            <polygon class="icon-fill-color"
-                                points="69,53.9 53.9,53.9 53.9,15.1 15.1,15.1 15.1,0 69,0 		" />
-                            <polygon class="icon-fill-color"
-                                points="53.9,69 0,69 0,15.1 15.1,15.1 15.1,53.9 53.9,53.9 		" />
-                        </g>
-                        <rect x="26.7" y="26.7" class="icon-center-color" width="15.6" height="15.6" />
+                      <path
+                        d="M48.4,51.3c-8,0-14.4-7.3-14.4-16.2s6.5-16.2,14.4-16.2s14.4,7.3,14.4,16.2C62.9,44,56.4,51.3,48.4,51.3z M48.4,21.2
+					c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9S55.1,21.2,48.4,21.2z"
+                      />
                     </g>
-                </svg>
+                    <g>
+                      <path
+                        d="M71.4,77.5H25.5l-6.3-25h19.7l9.5,6.8l10.4-6.8h18.8L71.4,77.5z M27.3,75.2h42.2l5.1-20.3H59.5l-11.1,7.2l-10.2-7.2h-16
+					L27.3,75.2z"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <ellipse
+                      class="service-illustration-color"
+                      cx="136.9"
+                      cy="48.6"
+                      rx="13.3"
+                      ry="15"
+                    />
+                    <polygon
+                      class="service-illustration-color"
+                      points="158.9,89.9 114.9,89.9 109.2,67.2 127.1,67.2 136.9,74.2 147.7,67.2 164.6,67.2 			"
+                    />
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M133,62.8c-8,0-14.4-7.3-14.4-16.2s6.5-16.2,14.4-16.2s14.4,7.3,14.4,16.2C147.4,55.6,140.9,62.8,133,62.8z M133,32.7
+					c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9C145.1,39,139.7,32.7,133,32.7z"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        d="M155.9,89.1H110l-6.3-25h19.7l9.5,6.8l10.4-6.8h18.8L155.9,89.1z M111.9,86.7h42.2l5.1-20.3h-15.1L133,73.6l-10.2-7.2
+					h-16L111.9,86.7z"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <ellipse
+                      class="service-illustration-color"
+                      cx="55"
+                      cy="113.5"
+                      rx="13.3"
+                      ry="15"
+                    />
+                    <polygon
+                      class="service-illustration-color"
+                      points="77,154.8 33,154.8 27.3,132.1 45.2,132.1 55,139.1 65.8,132.1 82.7,132.1 			"
+                    />
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M51.1,127.7c-8,0-14.4-7.3-14.4-16.2s6.5-16.2,14.4-16.2s14.4,7.3,14.4,16.2S59,127.7,51.1,127.7z M51.1,97.6
+					c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9C63.2,103.9,57.8,97.6,51.1,97.6z"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        d="M74,154H28.1l-6.3-25h19.7l9.5,6.8l10.4-6.8h18.8L74,154z M30,151.6h42.2l5.1-20.3H62.2L51,138.5l-10.2-7.2h-16
+					L30,151.6z"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <ellipse
+                      class="service-illustration-color"
+                      cx="126.7"
+                      cy="143.2"
+                      rx="13.3"
+                      ry="15"
+                    />
+                    <polygon
+                      class="service-illustration-color"
+                      points="148.7,184.5 104.6,184.5 98.9,161.8 116.8,161.8 126.7,168.8 137.4,161.8 154.4,161.8 			"
+                    />
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M122.7,157.4c-8,0-14.4-7.3-14.4-16.2s6.5-16.2,14.4-16.2s14.4,7.3,14.4,16.2C137.2,150.2,130.7,157.4,122.7,157.4z
+					 M122.7,127.4c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9C134.9,133.6,129.4,127.4,122.7,127.4z"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        d="M145.7,183.7H99.8l-6.3-25h19.7l9.5,6.8l10.4-6.8H152L145.7,183.7z M101.6,181.3h42.2L149,161h-15.1l-11.1,7.2
+					l-10.2-7.2h-16L101.6,181.3z"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <path
+                  d="M134.2,111.8c-27.4,0-49.6-22.3-49.6-49.6c0-27.4,22.3-49.6,49.6-49.6c27.4,0,49.6,22.3,49.6,49.6
+		C183.8,89.5,161.6,111.8,134.2,111.8z M134.2,18.5c-24,0-43.6,19.6-43.6,43.6s19.6,43.6,43.6,43.6s43.6-19.6,43.6-43.6
+		C177.8,38.1,158.2,18.5,134.2,18.5z"
+                />
+              </g>
+            </svg>
 
+            <h4 class="subtitle">Hunting</h4>
+            <p class="subheading">
+              We find and recruit the best candidates for your organization
+            </p>
+          </div>
 
+          <div class="service">
+            <svg
+              version="1.1"
+              id="staffing-illustration"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 200 200"
+              style="enable-background: new 0 0 200 200"
+              xml:space="preserve"
+            >
+              <title>Staffing service illustration</title>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <ellipse
+                        class="service-illustration-color"
+                        cx="66"
+                        cy="105.8"
+                        rx="13.3"
+                        ry="15"
+                      />
+                      <polygon
+                        class="service-illustration-color"
+                        points="88.1,147.1 44,147.1 38.3,124.4 56.2,124.4 66,131.4 76.8,124.4 93.8,124.4 				"
+                      />
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M62.1,120c-8,0-14.4-7.3-14.4-16.2s6.5-16.2,14.4-16.2s14.4,7.3,14.4,16.2C76.6,112.7,70.1,120,62.1,120z M62.1,89.9
+						c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9C74.2,96.2,68.8,89.9,62.1,89.9z"
+                        />
+                      </g>
+                      <g>
+                        <path
+                          d="M85.1,146.3H39.2l-6.3-25h19.7l9.5,6.8l10.4-6.8h18.8L85.1,146.3z M41,143.9h42.2l5.1-20.3H73.2l-11.1,7.2l-10.2-7.2
+						h-16L41,143.9z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <ellipse
+                        class="service-illustration-color"
+                        cx="139.4"
+                        cy="105.8"
+                        rx="13.3"
+                        ry="15"
+                      />
+                      <polygon
+                        class="service-illustration-color"
+                        points="161.4,147.1 117.3,147.1 111.7,124.4 129.5,124.4 139.4,131.4 150.1,124.4 167.1,124.4 				"
+                      />
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M135.4,120c-8,0-14.4-7.3-14.4-16.2s6.5-16.2,14.4-16.2s14.4,7.3,14.4,16.2C149.9,112.7,143.4,120,135.4,120z
+						 M135.4,89.9c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9C147.6,96.2,142.1,89.9,135.4,89.9z"
+                        />
+                      </g>
+                      <g>
+                        <path
+                          d="M158.4,146.3h-45.9l-6.3-25H126l9.5,6.8l10.4-6.8h18.8L158.4,146.3z M114.3,143.9h42.2l5.1-20.3h-15.1l-11.1,7.2
+						l-10.2-7.2h-16L114.3,143.9z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <rect x="21.7" y="144.3" width="156.7" height="11.3" />
+                <rect x="21.7" y="147.4" width="4.6" height="40.6" />
+                <rect x="173.7" y="147.4" width="4.6" height="40.6" />
+                <g>
+                  <g>
+                    <g>
+                      <ellipse
+                        class="service-illustration-color"
+                        cx="66"
+                        cy="30.2"
+                        rx="13.3"
+                        ry="15"
+                      />
+                      <polygon
+                        class="service-illustration-color"
+                        points="88.1,71.5 44,71.5 38.3,48.8 56.2,48.8 66,55.8 76.8,48.8 93.8,48.8 				"
+                      />
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M62.1,44.4c-8,0-14.4-7.3-14.4-16.2S54.2,12,62.1,12s14.4,7.3,14.4,16.2C76.6,37.1,70.1,44.4,62.1,44.4z M62.1,14.3
+						c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9C74.2,20.6,68.8,14.3,62.1,14.3z"
+                        />
+                      </g>
+                      <g>
+                        <path
+                          d="M85.1,70.7H39.2l-6.3-25h19.7l9.5,6.8l10.4-6.8h18.8L85.1,70.7z M41,68.3h42.2L88.3,48H73.2l-11.1,7.2L51.9,48h-16
+						L41,68.3z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <ellipse
+                        class="service-illustration-color"
+                        cx="139.4"
+                        cy="30.2"
+                        rx="13.3"
+                        ry="15"
+                      />
+                      <polygon
+                        class="service-illustration-color"
+                        points="161.4,71.5 117.3,71.5 111.7,48.8 129.5,48.8 139.4,55.8 150.1,48.8 167.1,48.8 				"
+                      />
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M135.4,44.4c-8,0-14.4-7.3-14.4-16.2S127.5,12,135.4,12s14.4,7.3,14.4,16.2C149.9,37.1,143.4,44.4,135.4,44.4z
+						 M135.4,14.3c-6.7,0-12.1,6.2-12.1,13.9c0,7.6,5.4,13.9,12.1,13.9s12.1-6.2,12.1-13.9C147.6,20.6,142.1,14.3,135.4,14.3z"
+                        />
+                      </g>
+                      <g>
+                        <path
+                          d="M158.4,70.7h-45.9l-6.3-25H126l9.5,6.8l10.4-6.8h18.8L158.4,70.7z M114.3,68.3h42.2l5.1-20.3h-15.1l-11.1,7.2L125.2,48
+						h-16L114.3,68.3z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <rect x="21.7" y="68.7" width="156.7" height="11.3" />
+                <rect x="21.7" y="71.8" width="4.6" height="40.6" />
+                <rect x="173.7" y="71.8" width="4.6" height="40.6" />
+              </g>
+            </svg>
 
+            <h4 class="subtitle">Staffing</h4>
+            <p class="subheading">
+              We make sure that your organization receives the talent you need
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <section
+        class="container-full-width phrase"
+        tabindex="0"
+        aria-label="Quote"
+      >
+        <h2>
+          Hassle free <span>IT</span> talent hiring and recruitment process
+        </h2>
+      </section>
+
+      <section
+        class="container technologies container-padding"
+        id="technologies"
+        tabindex="0"
+        aria-label="technologies"
+      >
+        <h2 class="title blue-text">technologies</h2>
+
+        <div class="tech-logo-container">
+          <div class="has-snippet" data-name=".Net" tabindex="0">
+            <img
+              src="assets/tech-logos/net.svg"
+              alt="dot net logo"
+              class="has-snippet"
+            />
+          </div>
+          <div class="has-snippet" data-name="Golang" tabindex="0">
+            <img src="assets/tech-logos/go.svg" alt="golang logo" />
+          </div>
+          <div class="has-snippet" data-name="C#" tabindex="0">
+            <img src="assets/tech-logos/csharp.svg" alt="c sharp logo" />
+          </div>
+          <div class="has-snippet" data-name="Python" tabindex="0">
+            <img src="assets/tech-logos/python.svg" alt="pyhton logo" />
+          </div>
+          <div class="has-snippet" data-name="PHP" tabindex="0">
+            <img src="assets/tech-logos/php.svg" alt="php logo" />
+          </div>
+          <div class="has-snippet" data-name="Nodejs" tabindex="0">
+            <img src="assets/tech-logos/node.svg" alt="node js logo" />
+          </div>
+          <div class="has-snippet" data-name="Java" tabindex="0">
+            <img src="assets/tech-logos/java.svg" alt="java logo" />
+          </div>
+          <div class="has-snippet" data-name="Kotlin" tabindex="0">
+            <img src="assets/tech-logos/kotlin.svg" alt="kotlin logo" />
+          </div>
+          <div class="has-snippet" data-name="React" tabindex="0">
+            <img src="assets/tech-logos/react.svg" alt="react logo" />
+          </div>
+          <div class="has-snippet" data-name="Vue" tabindex="0">
+            <img src="assets/tech-logos/vue.svg" alt="vue logo" />
+          </div>
+          <div class="has-snippet" data-name="Angular" tabindex="0">
+            <img src="assets/tech-logos/angular.svg" alt="angular logo" />
+          </div>
+          <div class="has-snippet" data-name="Swift" tabindex="0">
+            <img src="assets/tech-logos/swift.svg" alt="swift logo" />
+          </div>
+          <div class="has-snippet" data-name="Flutter" tabindex="0">
+            <img src="assets/tech-logos/flutter.svg" alt="flutter logo" />
+          </div>
+          <div class="has-snippet" data-name="MySQL" tabindex="0">
+            <img src="assets/tech-logos/mysql.svg" alt="mysql logo" />
+          </div>
+          <div class="has-snippet" data-name="MongoDB" tabindex="0">
+            <img src="assets/tech-logos/mongo.svg" alt="mongodb logo" />
+          </div>
+          <div class="has-snippet" data-name="PostgreSQL" tabindex="0">
+            <img src="assets/tech-logos/postgres.svg" alt="postgresql logo" />
+          </div>
+          <div class="has-snippet" data-name="Redis" tabindex="0">
+            <img src="assets/tech-logos/redis.svg" alt="redis logo" />
+          </div>
+          <div class="has-snippet" data-name="Javascript" tabindex="0">
+            <img src="assets/tech-logos/javascript.svg" alt="javascript logo" />
+          </div>
+          <div class="has-snippet" data-name="HTML" tabindex="0">
+            <img src="assets/tech-logos/html.svg" alt="html logo" />
+          </div>
+          <div class="has-snippet" data-name="CSS" tabindex="0">
+            <img src="assets/tech-logos/css.svg" alt="css logo" />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="container-full-width container-padding profiles"
+        id="profiles"
+        tabindex="0"
+        aria-label="profiles"
+      >
+        <h2 class="title light-text">profiles</h2>
+
+        <div class="absolute-icon">
+          <svg
+            version="1.1"
+            id="logo-quinto-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 69 69"
+            style="enable-background: new 0 0 69 69"
+            xml:space="preserve"
+          >
+            <title>Quinto Technologies Icon</title>
+            <g>
+              <g>
+                <polygon
+                  class="icon-fill-color"
+                  points="69,53.9 53.9,53.9 53.9,15.1 15.1,15.1 15.1,0 69,0 		"
+                />
+                <polygon
+                  class="icon-fill-color"
+                  points="53.9,69 0,69 0,15.1 15.1,15.1 15.1,53.9 53.9,53.9 		"
+                />
+              </g>
+              <rect
+                x="26.7"
+                y="26.7"
+                class="icon-center-color"
+                width="15.6"
+                height="15.6"
+              />
+            </g>
+          </svg>
+        </div>
+
+        <div class="profiles-container">
+          <div class="spacer"></div>
+
+          <div class="profiles-list">
+            <h3 class="profile light-text">Front End Developers</h3>
+            <h3 class="profile light-text">QA Manager</h3>
+            <h3 class="profile blue-text">Back End Developers</h3>
+            <h3 class="profile blue-text">Product Owner</h3>
+            <h3 class="profile light-text">QA</h3>
+            <h3 class="profile light-text">Scrum Master</h3>
+            <h3 class="profile blue-text">SDETs</h3>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="container-full-width container-padding about"
+        id="about"
+        tabindex="0"
+        aria-label="About"
+      >
+        <div class="about-content-container">
+          <div class="about-text-container">
+            <h2 class="title blue-text">about</h2>
+            <p class="subheading">
+              <span class="blue-text"
+                ><strong>Quinto Technologies</strong></span
+              >
+              is a professional staffing organization that specializes in the
+              placement of
+              <span class="blue-text">Information Technology</span>
+              Professionals for organizations in fulltime and consulting
+              capacities.
+            </p>
+          </div>
+        </div>
+        <div
+          class="about-image-container"
+          aria-label="Software developers Image"
+        >
+          <img src="assets/about-img.jpg" alt="software developers" />
+        </div>
+      </section>
+
+      <section
+        class="container container-padding contact"
+        id="contact"
+        tabindex="0"
+        aria-label="contact"
+      >
+        <h2 class="title">
+          LET’S FIND THE PERFECT TEAM FOR YOUR
+          <span class="gradient-text">ORGANIZATION</span>
+        </h2>
+
+        <div class="form-container">
+          <form name="contact" method="POST" data-netlify="true">
+            <div class="input-container">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                aria-label="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                aria-label="Your Email"
+                required
+              />
             </div>
 
-            <div class="profiles-container">
+            <textarea
+              name="Message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              aria-label="Your Message"
+              required
+            ></textarea>
 
-                <div class="spacer"></div>
-
-                <div class="profiles-list">
-                    <h3 class="profile light-text">Front End Developers</h3>
-                    <h3 class="profile light-text">QA Manager</h3>
-                    <h3 class="profile blue-text">Back End Developers</h3>
-                    <h3 class="profile blue-text">Product Owner</h3>
-                    <h3 class="profile light-text">QA</h3>
-                    <h3 class="profile light-text">Scrum Master</h3>
-                    <h3 class="profile blue-text">SDETs</h3>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="container-full-width container-padding about" id="about" tabindex="0" aria-label="About">
-
-            <div class="about-content-container">
-
-                <div class="about-text-container">
-                    <h2 class="title blue-text">about</h2>
-                    <p class="subheading"><span class="blue-text"><strong>Quinto Technologies</strong></span> is a
-                        professional staffing organization that specializes in
-                        the placement of
-                        <span class="blue-text">Information Technology</span> Professionals for organizations in
-                        fulltime
-                        and consulting capacities.
-                    </p>
-
-                </div>
-
-            </div>
-            <div class="about-image-container" aria-label="Software developers Image">
-                <img src="assets/about-img.jpg" alt="software developers">
-            </div>
-
-        </section>
-
-
-        <section class="container container-padding contact" id="contact" tabindex="0" aria-label="contact">
-
-            <h2 class="title">LET’S FIND THE PERFECT TEAM FOR YOUR <span class="gradient-text">ORGANIZATION</span></h2>
-
-            <div class="form-container">
-                <form name="contact" method="POST" data-netlify="true">
-
-                    <div class="input-container">
-                        <input type="text" name="name" placeholder="Name" aria-label="Your Name" required>
-                        <input type="email" name="email" placeholder="Email" aria-label="Your Email" required>
-                    </div>
-
-                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message"
-                        aria-label="Your Message" required></textarea>
-
-                    <button class="form-button" type="submit">Send Message</button>
-
-
-
-                </form>
-            </div>
-
-        </section>
-
+            <button class="form-button" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <a class="back-to-top" aria-label="Back to top button" tabindex="0" href="#">
-
+    <a
+      class="back-to-top"
+      aria-label="Back to top button"
+      tabindex="0"
+      href="#"
+    >
     </a>
 
     <div class="color-changer">
-        Color Scheme
-        <div class="color-schemes-menu">
-            <div class="color-scheme blue-scheme" data-color="blue"></div>
-            <div class="color-scheme hot-pink-scheme" data-color="pink"></div>
-            <div class="color-scheme purple-scheme" data-color="purple"></div>
-            <div class="color-scheme orange-scheme" data-color="orange"></div>
-            <div class="color-scheme green-scheme" data-color="green"></div>
-        </div>
+      Color Scheme
+      <div class="color-schemes-menu">
+        <div class="color-scheme blue-scheme" data-color="blue"></div>
+        <div class="color-scheme hot-pink-scheme" data-color="pink"></div>
+        <div class="color-scheme purple-scheme" data-color="purple"></div>
+        <div class="color-scheme orange-scheme" data-color="orange"></div>
+        <div class="color-scheme green-scheme" data-color="green"></div>
+      </div>
     </div>
 
     <footer>
-        <div class="container">
-
-            <svg version="1.1" id="quinto-tech-logo-white" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 368 136"
-                style="enable-background:new 0 0 368 136;" xml:space="preserve">
-                <title>Logo Quinto Technologies White</title>
-                <g>
-                    <g>
-                        <g>
-                            <polygon class="logo-light-color"
-                                points="367.5,82.4 352.4,82.4 352.4,43.6 313.6,43.6 313.6,28.5 367.5,28.5 			" />
-                            <polygon class="logo-light-color"
-                                points="352.4,97.5 298.5,97.5 298.5,43.6 313.6,43.6 313.6,82.4 352.4,82.4 			" />
-                        </g>
-                        <rect x="325.2" y="55.2" class="logo-accent-color" width="15.6" height="15.6" />
-                    </g>
-                    <g>
-                        <path class="logo-light-color" d="M38.4,94.2c-1.8,1-3.8,1.8-5.9,2.4s-4.3,0.9-6.6,0.9c-3.8,0-7.3-0.7-10.4-2.2s-5.8-3.4-8-5.8
+      <div class="container">
+        <svg
+          version="1.1"
+          id="quinto-tech-logo-white"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 368 136"
+          style="enable-background: new 0 0 368 136"
+          xml:space="preserve"
+        >
+          <title>Logo Quinto Technologies White</title>
+          <g>
+            <g>
+              <g>
+                <polygon
+                  class="logo-light-color"
+                  points="367.5,82.4 352.4,82.4 352.4,43.6 313.6,43.6 313.6,28.5 367.5,28.5 			"
+                />
+                <polygon
+                  class="logo-light-color"
+                  points="352.4,97.5 298.5,97.5 298.5,43.6 313.6,43.6 313.6,82.4 352.4,82.4 			"
+                />
+              </g>
+              <rect
+                x="325.2"
+                y="55.2"
+                class="logo-accent-color"
+                width="15.6"
+                height="15.6"
+              />
+            </g>
+            <g>
+              <path
+                class="logo-light-color"
+                d="M38.4,94.2c-1.8,1-3.8,1.8-5.9,2.4s-4.3,0.9-6.6,0.9c-3.8,0-7.3-0.7-10.4-2.2s-5.8-3.4-8-5.8
 			s-3.9-5.2-5.2-8.3c-1.2-3.1-1.8-6.3-1.8-9.7c0-3.4,0.6-6.6,1.9-9.7c1.3-3.1,3.1-5.9,5.3-8.3c2.3-2.4,5-4.3,8.1-5.7
 			s6.5-2.1,10.2-2.1c3.8,0,7.3,0.8,10.4,2.3c3.1,1.5,5.8,3.5,8,6s3.9,5.2,5.1,8.4c1.2,3.1,1.8,6.3,1.8,9.5c0,3.3-0.6,6.4-1.7,9.4
 			c-1.2,3-2.8,5.7-4.9,8l7.4,8.1H41L38.4,94.2z M25.9,86.9c1.9,0,3.6-0.3,5-0.9l-8.2-9.1h11.1l3.2,3.5c0.8-1.3,1.3-2.8,1.7-4.3
 			s0.6-3.1,0.6-4.7c0-2-0.3-3.9-0.9-5.7c-0.6-1.9-1.4-3.5-2.6-4.9c-1.2-1.4-2.6-2.6-4.2-3.4C30,56.5,28.1,56,25.9,56
 			c-2.3,0-4.2,0.4-5.9,1.3c-1.7,0.9-3.1,2.1-4.2,3.5c-1.1,1.5-2,3.1-2.5,5c-0.6,1.9-0.8,3.7-0.8,5.7s0.3,3.9,0.9,5.7
-			c0.6,1.9,1.4,3.5,2.6,4.9c1.1,1.4,2.5,2.6,4.2,3.4C21.9,86.5,23.8,86.9,25.9,86.9z" />
-                        <path class="logo-light-color" d="M80.2,87c2,0,3.7-0.4,5.1-1.3c1.4-0.8,2.5-2,3.4-3.4s1.5-3,1.8-4.8c0.4-1.8,0.5-3.6,0.5-5.5V45.9h11.8v26.2
+			c0.6,1.9,1.4,3.5,2.6,4.9c1.1,1.4,2.5,2.6,4.2,3.4C21.9,86.5,23.8,86.9,25.9,86.9z"
+              />
+              <path
+                class="logo-light-color"
+                d="M80.2,87c2,0,3.7-0.4,5.1-1.3c1.4-0.8,2.5-2,3.4-3.4s1.5-3,1.8-4.8c0.4-1.8,0.5-3.6,0.5-5.5V45.9h11.8v26.2
 			c0,3.6-0.4,6.9-1.3,10s-2.3,5.8-4.1,8.1c-1.9,2.3-4.2,4.1-7.1,5.4s-6.3,2-10.2,2c-4.1,0-7.6-0.7-10.5-2.1s-5.2-3.3-7-5.6
 			c-1.8-2.3-3.1-5-4-8.1c-0.8-3.1-1.3-6.3-1.3-9.7V45.9h11.8v26.2c0,2,0.2,3.8,0.6,5.6c0.4,1.8,1,3.4,1.9,4.8s2,2.5,3.4,3.3
-			C76.5,86.6,78.2,87,80.2,87z" />
-                        <path class="logo-light-color"
-                            d="M112.1,97.1V45.9h11.8v51.2C123.9,97.1,112.1,97.1,112.1,97.1z" />
-                        <path class="logo-light-color"
-                            d="M145.5,67.8v29.3h-11.8V45.9h9.2L166.8,76V45.9h11.8v51.2h-9.5L145.5,67.8z" />
-                        <path class="logo-light-color" d="M227.5,56.3h-15.6v40.8h-11.8V56.3h-15.7V45.9h43.1V56.3z" />
-                        <path class="logo-light-color" d="M253.3,97.5c-3.8,0-7.3-0.7-10.4-2.2c-3.1-1.5-5.8-3.5-8-5.9s-3.9-5.2-5.2-8.3c-1.2-3.1-1.8-6.3-1.8-9.7
+			C76.5,86.6,78.2,87,80.2,87z"
+              />
+              <path
+                class="logo-light-color"
+                d="M112.1,97.1V45.9h11.8v51.2C123.9,97.1,112.1,97.1,112.1,97.1z"
+              />
+              <path
+                class="logo-light-color"
+                d="M145.5,67.8v29.3h-11.8V45.9h9.2L166.8,76V45.9h11.8v51.2h-9.5L145.5,67.8z"
+              />
+              <path
+                class="logo-light-color"
+                d="M227.5,56.3h-15.6v40.8h-11.8V56.3h-15.7V45.9h43.1V56.3z"
+              />
+              <path
+                class="logo-light-color"
+                d="M253.3,97.5c-3.8,0-7.3-0.7-10.4-2.2c-3.1-1.5-5.8-3.5-8-5.9s-3.9-5.2-5.2-8.3c-1.2-3.1-1.8-6.3-1.8-9.7
 			c0-3.4,0.6-6.6,1.9-9.7c1.3-3.1,3.1-5.9,5.3-8.3c2.3-2.4,5-4.3,8.1-5.7s6.5-2.1,10.2-2.1c3.8,0,7.3,0.7,10.4,2.2s5.8,3.5,8,5.9
 			c2.2,2.5,3.9,5.2,5.1,8.4c1.2,3.1,1.8,6.3,1.8,9.5c0,3.4-0.6,6.6-1.9,9.7s-3,5.9-5.3,8.3s-5,4.3-8.1,5.7
 			C260.4,96.8,257,97.5,253.3,97.5z M240,71.6c0,2,0.3,3.9,0.9,5.7c0.6,1.9,1.4,3.5,2.6,4.9c1.1,1.4,2.5,2.6,4.2,3.5
 			s3.6,1.3,5.8,1.3c2.3,0,4.2-0.5,5.9-1.4c1.7-0.9,3.1-2.1,4.2-3.6s1.9-3.1,2.5-5s0.8-3.7,0.8-5.7s-0.3-3.9-0.9-5.7
 			c-0.6-1.9-1.4-3.5-2.6-4.9s-2.6-2.5-4.2-3.4c-1.7-0.8-3.6-1.3-5.7-1.3c-2.3,0-4.2,0.4-5.9,1.3c-1.7,0.9-3.1,2.1-4.2,3.5
-			c-1.1,1.4-2,3.1-2.5,4.9C240.3,67.7,240,69.6,240,71.6z" />
-                    </g>
-                </g>
-            </svg>
+			c-1.1,1.4-2,3.1-2.5,4.9C240.3,67.7,240,69.6,240,71.6z"
+              />
+            </g>
+          </g>
+        </svg>
 
-
-
-            <p class="copyright">Copyright &copy; 2022</p>
-            <a href="mailto:contact@quintotech.io">contact@quintotech.io</a>
-        </div>
+        <p class="copyright">Copyright &copy; 2022</p>
+        <a href="mailto:contact@quintotech.io">contact@quintotech.io</a>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>

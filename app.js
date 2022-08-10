@@ -6,6 +6,7 @@ const toggle = document.querySelector(".main-nav-toggle"),
   mainHeader = document.querySelector(".main-header"),
   navLinks = document.querySelectorAll(".link-decoration"),
   root = document.querySelector(":root"),
+  preLoader = document.querySelector(".pre-loader"),
   colorSelectors = document.querySelectorAll(".color-scheme");
 
 const backToTopFunction = () => {
@@ -89,4 +90,5 @@ colorSelectors.forEach((selector) => {
 window.onload = () => {
   let height = `${window.innerHeight}px`;
   root.style.setProperty("--min-height", height);
+  preLoader.classList.add("hidden");
 };
